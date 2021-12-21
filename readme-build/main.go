@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	_topPageInfo = "# cmd\n一些自写自用的命令行脚本  \nps: 墙内可使用我自建的 fxtaooRaw"
+	_topPageInfo = "# cmd\n一些自写自用的命令行脚本  \nps: 墙内可使用我反向代理的 fxtaooRaw"
 	_codeURL     = "https://github.com/fxtaoo/cmd/blob/master/"
 	_githubRaw   = "https://raw.githubusercontent.com/fxtaoo/cmd/master/"
 	_fxtaooRaw   = "https://raw.fxtaoo.dev/fxtaoo/cmd/master/"
@@ -65,9 +65,9 @@ func (d *scriptDir) readApp() {
 			var tmpApp script
 			tmpApp.name = file.Name()
 			tmpApp.path = path
-			tmpApp.codeUrl = _codeURL + tmpApp.name
-			tmpApp.githubRaw = _githubRaw + tmpApp.name
-			tmpApp.githubRaw = _githubRaw + tmpApp.name
+			tmpApp.codeUrl = _codeURL + d.path + "/" + tmpApp.name
+			tmpApp.githubRaw = _githubRaw + d.path + "/" + tmpApp.name
+			tmpApp.githubRaw = _githubRaw + d.path + "/" + tmpApp.name
 
 			tmpApp.readInfo()
 			d.content += tmpApp.appMarkdown() + "\n\n"
