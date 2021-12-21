@@ -67,7 +67,7 @@ func (d *scriptDir) readApp() {
 			tmpApp.path = path
 			tmpApp.codeUrl = _codeURL + d.path + "/" + tmpApp.name
 			tmpApp.githubRaw = _githubRaw + d.path + "/" + tmpApp.name
-			tmpApp.githubRaw = _githubRaw + d.path + "/" + tmpApp.name
+			tmpApp.fxtaooRaw = _fxtaooRaw + d.path + "/" + tmpApp.name
 
 			tmpApp.readInfo()
 			d.content += tmpApp.appMarkdown() + "\n\n"
