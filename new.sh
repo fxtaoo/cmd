@@ -51,7 +51,7 @@ done
 read -rp "简介：" intro
 
 content="#!/usr/bin/env bash
-// $intro
+# $intro
 
 function $file_name(){
 }
