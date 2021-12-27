@@ -24,6 +24,9 @@ golang 指定版本重装（linux-amd64，科大源）
 
 ## 安装
 
+[install-centos-docker.sh](https://github.com/fxtaoo/cmd/blob/master/install/install-centos-docker.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/install-centos-docker.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/install-centos-docker.sh)  
+centos docker 安装
+
 [install-debian-cloud-linux.sh](https://github.com/fxtaoo/cmd/blob/master/install/install-debian-cloud-linux.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/install-debian-cloud-linux.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/install-debian-cloud-linux.sh)  
 debian 安装 cloud 内核
 
