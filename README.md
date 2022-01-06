@@ -49,6 +49,9 @@ debian docker 安装
 
 ## 函数
 
+[change-debian-mirrors.sh](https://github.com/fxtaoo/cmd/blob/master/func/change-debian-mirrors.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/func/change-debian-mirrors.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/func/change-debian-mirrors.sh)  
+更改为腾讯源
+
 [check-ip.sh](https://github.com/fxtaoo/cmd/blob/master/func/check-ip.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/func/check-ip.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/func/check-ip.sh)  
 IP 输入格式验证
 
