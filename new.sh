@@ -41,7 +41,7 @@ done
 # 输入名字
 while true ; do
   read -rp "文件名：" file_name
-  file_name="$(string_middle_underline $file_name)"
+  func_name="$(string_middle_underline $file_name)"
   if [[ ! -f $file_name ]] ; then
     break;
   fi
@@ -53,7 +53,7 @@ read -rp "简介：" intro
 content="#!/usr/bin/env bash
 # $intro
 
-function $file_name(){
+function $func_name(){
 }
 "
 
