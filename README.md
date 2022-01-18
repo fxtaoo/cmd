@@ -33,10 +33,16 @@ debian 安装 cloud 内核
 [install-debian-docker.sh](https://github.com/fxtaoo/cmd/blob/master/install/install-debian-docker.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/install-debian-docker.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/install-debian-docker.sh)  
 debian docker 安装
 
+[install-docker-compose.sh](https://github.com/fxtaoo/cmd/blob/master/install/install-docker-compose.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/install-docker-compose.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/install-docker-compose.sh)  
+centos 安装 docker-compose
+
 ## 系统
 
 [change-user-passwd.sh](https://github.com/fxtaoo/cmd/blob/master/sys/change-user-passwd.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/change-user-passwd.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/change-user-passwd.sh)  
 重置用户密码
+
+[create-passwd.sh](https://github.com/fxtaoo/cmd/blob/master/sys/create-passwd.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/create-passwd.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/create-passwd.sh)  
+生成高强度密码
 
 [get-disk-size.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-disk-size.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/get-disk-size.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/get-disk-size.sh)  
 返回磁盘大小
