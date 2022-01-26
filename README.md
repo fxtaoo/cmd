@@ -16,6 +16,9 @@ docker-compose 容器镜像更新并重建服务
 [golang-update.sh](https://github.com/fxtaoo/cmd/blob/master/app/golang-update.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/golang-update.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/golang-update.sh)  
 golang 指定版本重装（linux-amd64，科大源）
 
+[kernel-update-centos.sh](https://github.com/fxtaoo/cmd/blob/master/app/kernel-update-centos.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/kernel-update-centos.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/kernel-update-centos.sh)  
+centos 内核升级到最新长期支持
+
 [path-add-cmd.sh](https://github.com/fxtaoo/cmd/blob/master/app/path-add-cmd.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/path-add-cmd.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/path-add-cmd.sh)  
 指定文件夹路径添加到 PATH (递归)，文件添加可执行权限
 
@@ -26,6 +29,9 @@ golang 指定版本重装（linux-amd64，科大源）
 
 [install-centos-docker.sh](https://github.com/fxtaoo/cmd/blob/master/install/install-centos-docker.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/install-centos-docker.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/install-centos-docker.sh)  
 centos docker 安装
+
+[install-centos-kubeadm.sh](https://github.com/fxtaoo/cmd/blob/master/install/install-centos-kubeadm.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/install-centos-kubeadm.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/install-centos-kubeadm.sh)  
+cnetos 安装 kubeadm 初始化准备
 
 [install-debian-cloud-linux.sh](https://github.com/fxtaoo/cmd/blob/master/install/install-debian-cloud-linux.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/install-debian-cloud-linux.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/install-debian-cloud-linux.sh)  
 debian 安装 cloud 内核
