@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # debian 安装 cloud 内核
+# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/debian-cloud-linux.sh)"
 
 source /etc/os-release
 

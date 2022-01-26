@@ -1,6 +1,6 @@
 #!/bin/bash
 # cnetos 安装 kubeadm 初始化准备
-# bash -c $(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/install-centos-kubeadm.shh)
+# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/centos-kubeadm.sh)"
 # 脚本参考 https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
 # 设置主机名
@@ -32,7 +32,7 @@ EOF
 sysctl --system
 
 # 安装 docker
-bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/install-centos-docker.sh)"
+bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/centos-docker.sh)"
 
 # 安装 kubeadm、kubelet 和 kubectl
 cat <<EOF | tee /etc/yum.repos.d/kubernetes.repo

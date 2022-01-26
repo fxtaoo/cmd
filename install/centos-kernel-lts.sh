@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# centos 内核升级到最新长期支持
-# bash -c $(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/kernel-update-centos.sh)
+# centos 安装最新长期支持内核
+# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/centos-kernel-lts.sh)"
 
 function kernel_update_centos(){
     rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org

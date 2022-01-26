@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # centos 安装 docker-compose
 # pip 配置为腾讯源
+# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/docker-compose.sh)"
 
 function install_docker_compose(){
   yum install -y python3-pip
@@ -10,4 +11,3 @@ function install_docker_compose(){
 }
 
 install_docker_compose
-

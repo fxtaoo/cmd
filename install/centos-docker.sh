@@ -1,6 +1,7 @@
 #!/bin/bash
 # centos docker 安装
 # 国内 腾讯源 七牛 Docker Hub 镜像
+# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/centos-docker.sh)"
 
 function is_root() {
   if [[ 0 != "$UID" ]]; then # "$(id -nu)" != "root"
@@ -8,16 +9,15 @@ function is_root() {
     exit 1
   fi
 }
-
 is_root
 
 if ping -c 2 google.com ; then
-    echo -e "执行官方安装脚本：\n"
+    # 执行官方安装脚本
     curl -fsSL https://get.docker.com -o get-docker.sh
     DRY_RUN=1 sh ./get-docker.sh
     rm ./get-docker.sh
 else 
-    echo -e "命令行安装，配置国内源：\n"
+    # 命令行安装，配置国内源
 
     curl -o /etc/yum.repos.d/docker-ce.repo https://mirrors.cloud.tencent.com/docker-ce/linux/centos/docker-ce.repo
 
@@ -29,7 +29,7 @@ else
         "registry-mirrors": [
             "https://reg-mirror.qiniu.com"
         ]
-    }' > /etc/docker/daemon.json 
+}' > /etc/docker/daemon.json 
 fi
 
 systemctl enable docker
