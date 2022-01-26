@@ -41,7 +41,7 @@ done
 # 输入名字
 while true ; do
   read -rp "文件名：" file_name
-  func_name="$(string_middle_underline $file_name)"
+  func_name="$(convert_middle_underline $file_name)"
   if [[ ! -f $file_name ]] ; then
     break;
   fi
@@ -52,6 +52,7 @@ read -rp "简介：" intro
 
 content="#!/usr/bin/env bash
 # $intro
+# # bash -c \"\$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/$sort/$file_name.sh)\"
 
 function $func_name(){
 }

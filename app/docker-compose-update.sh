@@ -2,6 +2,7 @@
 # docker-compose 容器镜像更新并重建服务
 # $1 指定配置文件（绝对路径）
 # $1 缺省使用当前工作目录 docker-compose.yml
+# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/docker-compose-update.sh)"
 
 
 # 确定配置文件位置
