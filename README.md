@@ -13,6 +13,9 @@ docker-compose 容器镜像更新并重建服务
 [docker-rmv-no-run-all.sh](https://github.com/fxtaoo/cmd/blob/master/app/docker-rmv-no-run-all.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/docker-rmv-no-run-all.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/docker-rmv-no-run-all.sh)  
 删除所有未运行容器与卷
 
+[kubeadm-config-images-china.sh](https://github.com/fxtaoo/cmd/blob/master/app/kubeadm-config-images-china.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/kubeadm-config-images-china.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/kubeadm-config-images-china.sh)  
+国内下载 kubeadm 所需镜像
+
 [watchdog.sh](https://github.com/fxtaoo/cmd/blob/master/app/watchdog.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/watchdog.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/watchdog.sh)  
 启动进程并守护
 
@@ -105,9 +108,6 @@ IP 输入格式验证
 [new-py-venv.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-py-venv.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-py-venv.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-py-venv.sh)  
 工作目录开启 python 虚拟环境
 
-taoo/cmd/master/other/new-py-venv.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-py-venv.sh)  
-工作目录开启 python 虚拟环境
-
-[update-pip3-all.sh](https://github.com/fxtaoo/cmd/blob/master/other/update-pip3-all.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/update-pip3-all.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/update-pip3-all.sh)  
+taooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/update-pip3-all.sh)  
 pip3 全部包更新
 
