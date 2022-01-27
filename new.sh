@@ -2,7 +2,7 @@
 # 创建符合 readme-build 格式的项目
 
 run_dir_path=$(dirname $0)
-source $run_dir_path/func/string-middle-underline.sh
+source $run_dir_path/func/convert-middle-underline.sh
 
 # 输入类别
 while true ; do
