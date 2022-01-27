@@ -52,7 +52,7 @@ read -rp "简介：" intro
 
 content="#!/usr/bin/env bash
 # $intro
-# # bash -c \"\$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/$sort/$file_name.sh)\"
+# bash -c \"\$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/$sort/$file_name.sh)\"
 
 function $func_name(){
 }
