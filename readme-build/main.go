@@ -90,10 +90,10 @@ func main() {
 
 	var appDir, funDir, installDir, otherDir, sysDir scriptDir
 	initDir(&appDir, "app", "工具")
-	initDir(&funDir, "func", "函数")
 	initDir(&installDir, "install", "安装")
-	initDir(&otherDir, "other", "其他")
 	initDir(&sysDir, "sys", "系统")
+	initDir(&funDir, "func", "函数")
+	initDir(&otherDir, "other", "其他")
 
 	content := _topPageInfo + "\n\n"
 	content += appDir.content + installDir.content + sysDir.content + funDir.content + otherDir.content

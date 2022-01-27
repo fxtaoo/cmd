@@ -32,12 +32,8 @@ else
     curl -fsSL http://mirrors.cloud.tencent.com/docker-ce/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
     # 七牛 Docker Hub 镜像
-    mkdir -p /etc/docker
-    echo '{
-        "registry-mirrors": [
-            "https://reg-mirror.qiniu.com"
-        ]
-    }' > /etc/docker/daemon.json 
+    mkdir -p /etc/docker 
+    curl -o /etc/docker/daemon.json https://raw.fxtaoo.dev/fxtaoo/cmd/master/conf/docker-daemon.json
 fi
 
 systemctl enable docker

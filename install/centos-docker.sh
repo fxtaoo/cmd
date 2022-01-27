@@ -18,18 +18,12 @@ if ping -c 2 google.com ; then
     rm ./get-docker.sh
 else 
     # 命令行安装，配置国内源
-
     curl -o /etc/yum.repos.d/docker-ce.repo https://mirrors.cloud.tencent.com/docker-ce/linux/centos/docker-ce.repo
-
     yum makecache fast && yum install docker-ce docker-ce-cli containerd.io -y
 
     # 七牛 Docker Hub 镜像
-    mkdir -p /etc/docker
-    echo '{
-        "registry-mirrors": [
-            "https://reg-mirror.qiniu.com"
-        ]
-}' > /etc/docker/daemon.json 
+    mkdir -p /etc/docker 
+    curl -o /etc/docker/daemon.json https://raw.fxtaoo.dev/fxtaoo/cmd/master/conf/docker-daemon.json
 fi
 
 systemctl enable docker
