@@ -13,6 +13,12 @@ docker-compose 容器镜像更新并重建服务
 [docker-rmv-no-run-all.sh](https://github.com/fxtaoo/cmd/blob/master/app/docker-rmv-no-run-all.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/docker-rmv-no-run-all.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/docker-rmv-no-run-all.sh)  
 删除所有未运行容器与卷
 
+[inotifywait.sh](https://github.com/fxtaoo/cmd/blob/master/app/inotifywait.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/inotifywait.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/inotifywait.sh)  
+指定监控文件目录变更执行脚本
+
+[kill-ps-grep-str.sh](https://github.com/fxtaoo/cmd/blob/master/app/kill-ps-grep-str.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/kill-ps-grep-str.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/kill-ps-grep-str.sh)  
+杀死指定字符串相关进程
+
 [kubeadm-config-images-china.sh](https://github.com/fxtaoo/cmd/blob/master/app/kubeadm-config-images-china.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/kubeadm-config-images-china.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/kubeadm-config-images-china.sh)  
 国内下载 kubeadm 所需镜像
 
@@ -107,7 +113,4 @@ IP 输入格式验证
 
 [new-py-venv.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-py-venv.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-py-venv.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-py-venv.sh)  
 工作目录开启 python 虚拟环境
-
-taooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/update-pip3-all.sh)  
-pip3 全部包更新
 
