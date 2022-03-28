@@ -4,10 +4,10 @@
 
 function change_debian_mirrors(){
   source /etc/os-release
-  cp /etc/apt/sources.lis /etc/apt/sources.lis.b
+  cp /etc/apt/sources.list /etc/apt/sources.list.b
   echo "deb https://mirrors.cloud.tencent.com/debian/ ${VERSION_CODENAME} main contrib non-free
 deb https://mirrors.cloud.tencent.com/debian/ ${VERSION_CODENAME}-updates main contrib non-free
-deb https://mirrors.cloud.tencent.com/debian/ ${VERSION_CODENAME}-backports main contrib non-free" > /etc/apt/sources.lis
+deb https://mirrors.cloud.tencent.com/debian/ ${VERSION_CODENAME}-backports main contrib non-free" > /etc/apt/sources.list
 }
 
 change_debian_mirrors
