@@ -42,9 +42,6 @@ debian 安装 cloud 内核
 [debian-docker.sh](https://github.com/fxtaoo/cmd/blob/master/install/debian-docker.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/debian-docker.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/debian-docker.sh)  
 debian docker 安装
 
-[docker-compose.sh](https://github.com/fxtaoo/cmd/blob/master/install/docker-compose.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/docker-compose.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/docker-compose.sh)  
-centos 安装 docker-compose
-
 [golang.sh](https://github.com/fxtaoo/cmd/blob/master/install/golang.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/golang.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/golang.sh)  
 golang 指定版本重装（linux-amd64，科大源）
 
@@ -58,6 +55,9 @@ golang 指定版本重装（linux-amd64，科大源）
 
 [path-add-cmd.sh](https://github.com/fxtaoo/cmd/blob/master/sys/path-add-cmd.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/path-add-cmd.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/path-add-cmd.sh)  
 指定文件夹路径添加到 PATH (递归)，文件添加可执行权限
+
+[pip-change-mirrors.sh](https://github.com/fxtaoo/cmd/blob/master/sys/pip-change-mirrors.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/pip-change-mirrors.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/pip-change-mirrors.sh)  
+pip 更改源
 
 [update-pip3-all.sh](https://github.com/fxtaoo/cmd/blob/master/sys/update-pip3-all.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/update-pip3-all.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/update-pip3-all.sh)  
 pip3 全部包更新
@@ -113,4 +113,6 @@ IP 输入格式验证
 
 [new-py-venv.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-py-venv.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-py-venv.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-py-venv.sh)  
 工作目录开启 python 虚拟环境
+
+拟环境
 
