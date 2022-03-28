@@ -15,13 +15,12 @@ is_root
 if ping -c 1 google.com ; then
     echo -e "执行官方安装脚本：\n"
     curl -fsSL https://get.docker.com -o get-docker.sh
-    DRY_RUN=1 sh ./get-docker.sh
+    DRY_RUN=1 bash ./get-docker.sh
     rm ./get-docker.sh
 else 
     echo -e "命令行安装，配置国内源：\n"
 
-    apt update && apt install \
-      apt-get install \
+    apt update -y && apt install -y \
       ca-certificates \
       curl \
       gnupg \
@@ -30,6 +29,8 @@ else
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.cloud.tencent.com/docker-ce/linux/debian $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
 
     curl -fsSL http://mirrors.cloud.tencent.com/docker-ce/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+    apt update && apt install -y docker-ce docker-ce-cli containerd.io
 
     # 七牛 Docker Hub 镜像
     mkdir -p /etc/docker 
