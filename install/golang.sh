@@ -26,7 +26,7 @@ fi
 # https://github.com/goproxy/goproxy.cn/blob/master/README.zh-CN.md
 if ! ping -c 2 google.com ; then
   (
-    PATH="$PATH:/usr/local/go/bin:"
+    PATH="$PATH:/usr/local/go/bin"
     go env -w GO111MODULE=on
     go env -w GOPROXY=https://goproxy.cn,direct
   )
