@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # golang 指定版本重装（linux-amd64，科大源）
-# $1 指定 golang 版本号，eg:1.18.1
-# $1 缺省 1.18.1
+# $1 指定 golang 版本号，eg:1.18
+# $1 缺省 1.18
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/golang.sh)"
 
 # 手动指定版本
@@ -9,7 +9,7 @@ if [[ $1 ]] ; then
  golang_version=$1
 fi
 
-golang_file_path="/tmp/go${golang_version:=1.18.1}.linux-amd64.tar.gz"
+golang_file_path="/tmp/go${golang_version:=1.18}.linux-amd64.tar.gz"
 
 wget http://mirrors.ustc.edu.cn/golang/go${golang_version}.linux-amd64.tar.gz -O $golang_file_path
 
