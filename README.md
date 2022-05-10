@@ -4,6 +4,9 @@ ps: 墙内可使用我反向代理的 fxtaooRaw
 
 ## 工具
 
+[cpu-use-max-calc.sh](https://github.com/fxtaoo/cmd/blob/master/app/cpu-use-max-calc.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/cpu-use-max-calc.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/cpu-use-max-calc.sh)  
+cpu 最大使用比例计算
+
 [create-passwd.sh](https://github.com/fxtaoo/cmd/blob/master/app/create-passwd.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/app/create-passwd.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/create-passwd.sh)  
 生成高强度密码
 
@@ -113,6 +116,4 @@ IP 输入格式验证
 
 [new-py-venv.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-py-venv.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-py-venv.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-py-venv.sh)  
 工作目录开启 python 虚拟环境
-
-拟环境
 
