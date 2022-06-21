@@ -103,35 +103,3 @@ pip3 包更新
 [watchdog.sh](https://github.com/fxtaoo/cmd/blob/master/other/watchdog.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/watchdog.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/watchdog.sh)  
 进程守护
 
-�
-
-nt-log.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/func/print-log.sh)  
-日志输出
-
-## 其他
-
-[get-local-ip.sh](https://github.com/fxtaoo/cmd/blob/master/other/get-local-ip.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/get-local-ip.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/get-local-ip.sh)  
-返回出口 IP
-
-[new-compose.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-compose.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-compose.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-compose.sh)  
-创建 docker-compose.yml
-
-[new-gop.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-gop.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-gop.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-gop.sh)  
-创建序列 go 项目
-
-[new-py-venv.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-py-venv.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-py-venv.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-py-venv.sh)  
-工作目录开启 python 虚拟环境
-
-虚拟环境
-
-目录开启 python 虚拟环境
-
-aw.fxtaoo.dev/fxtaoo/cmd/master/other/new-compose.sh)  
-创建 docker-compose.yml
-
-[new-gop.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-gop.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-gop.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-gop.sh)  
-创建序列 go 项目
-
-[new-py-venv.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-py-venv.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-py-venv.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/new-py-venv.sh)  
-工作目录开启 python 虚拟环境
-
