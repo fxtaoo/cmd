@@ -19,7 +19,7 @@ if  ! which docker-compose  ; then
   echo "退出！docker-compose 不存在！"
 fi
 
-docker-compose -f $conf_path pull
-docker-compose -f $conf_path down -v
-docker-compose -f $conf_path up -d
+/usr/bin/docker compose -f $conf_path pull
+/usr/bin/docker compose -f $conf_path down -v
+/usr/bin/docker compose -f $conf_path up -d
 
