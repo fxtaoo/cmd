@@ -5,6 +5,7 @@
 ./readmebuild
 
 if [[ $(git status | wc -l) -gt 4 ]] ; then
+    rm README.md
     git config --global user.name  "GitHub Actions"
     git config --global user.name  "GitHub Actions"
     git config --global user.email  "i@fxtaoo.dev"
