@@ -1,7 +1,8 @@
 #!/bin/bash
-# debian docker 安装
+# debian 安装 docker
 # 国内 腾讯源 七牛 Docker Hub 镜像
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/debian-docker.sh)"
+# bash -c "$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/debian-docker.sh)"
 
 function is_root() {
   if [[ 0 != "$UID" ]]; then # "$(id -nu)" != "root"
@@ -9,33 +10,39 @@ function is_root() {
     exit 1
   fi
 }
-
 is_root
 
-if ping -c 1 google.com ; then
-    echo -e "执行官方安装脚本：\n"
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    DRY_RUN=1 bash ./get-docker.sh
-    rm ./get-docker.sh
-else 
-    echo -e "命令行安装，配置国内源：\n"
+apt-get apt-get remove docker docker-engine docker.io containerd runc
 
-    apt update -y && apt install -y \
-      ca-certificates \
-      curl \
-      gnupg \
-      lsb-release
+apt-get update
 
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.cloud.tencent.com/docker-ce/linux/debian $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
 
-    curl -fsSL http://mirrors.cloud.tencent.com/docker-ce/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-    apt update && apt install -y docker-ce docker-ce-cli containerd.io
+normal_url="download.docker.com"
+docker_daemon="docker-daemon"
 
-    # 七牛 Docker Hub 镜像
-    mkdir -p /etc/docker 
-    curl -o /etc/docker/daemon.json https://raw.fxtaoo.dev/fxtaoo/cmd/master/conf/docker-daemon.json
+if ! ping 2 google.com ;then
+  normal_url="mirrors.cloud.tencent.com/docker-ce"
+  docker_daemon="docker-daemon-cn"
 fi
+
+mkdir -p /etc/apt/keyrings
+curl -fsSL https://${normal_url}/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://${normal_url}/linux/debian \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+apt-get update
+apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+mkdir -p /etc/docker
+curl -o /etc/docker/daemon.json https://raw.fxtaoo.dev/fxtaoo/cmd/master/conf/${docker_daemon}.json
 
 systemctl enable docker
 systemctl restart docker

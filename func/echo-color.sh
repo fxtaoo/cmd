@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 输入颜色字体
+# 输出颜色字
 
 # 正确绿色
 function echo_ok(){

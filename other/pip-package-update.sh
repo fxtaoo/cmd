@@ -1,5 +1,5 @@
 #!/bin/bash
-# pip3 全部包更新
+# pip3 包更新
 
 old_list=$(pip3 list --outdated --format=freeze | awk -F "==" '{print $1}')
 

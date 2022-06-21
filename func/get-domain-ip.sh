@@ -7,3 +7,4 @@ function get_domain_ip(){
   fi
   ping $1 -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'
 }
+get_domain_ip $1

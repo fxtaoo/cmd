@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 判断并提示需要 root 用户执行
+# 提示需 root 执行
 
 function is_root() {
   if [[ 0 != "$UID" ]]; then # "$(id -nu)" != "root"
@@ -7,4 +7,4 @@ function is_root() {
     exit 1
   fi
 }
-# is_root
+is_root

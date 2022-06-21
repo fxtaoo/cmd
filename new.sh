@@ -1,35 +1,33 @@
 #!/usr/bin/env bash
 # 创建符合 readme-build 格式的项目
 
-run_dir_path=$(dirname $0)
-source $run_dir_path/func/convert-middle-underline.sh
+function convert_middle_underline(){
+  local middle=$1
+  echo "$middle" | sed 's/-/_/g'
+}
 
 # 输入类别
 while true ; do
   read -rp "
-  1.app 2.install
-  3.sys 4.func 5.other
-  
+  1.func 2.sys
+  3.install 4.other
+
   适用系统编号：" sort
   case $sort in
    1 )
-    sort="app"
+    sort="func"
     break
     ;;
    2 )
-    sort="install"
+    sort="sys"
     break
     ;;
    3 )
-    sort="sys"
+    sort="install"
     break
     ;;
    4 )
     sort="func"
-    break
-    ;;
-   5 )
-    sort="other"
     break
     ;;
    *)
@@ -53,17 +51,14 @@ read -rp "简介：" intro
 content="#!/usr/bin/env bash
 # $intro
 # bash -c \"\$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/$sort/$file_name.sh)\"
+# bash -c \"\$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/$sort/$file_name.sh)\"
 
 function $func_name(){
+
 }
 "
 
 # 创建文件
 echo "$content"  > ./$sort/$file_name.sh
-
-# vscode 存在则打开
-if which code ; then
-  code ./$sort/$file_name.sh
-fi
 
 

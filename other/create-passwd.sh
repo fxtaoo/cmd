@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# 生成高强度密码
+# 生成指定位数密码
 # $1 为指定位数，缺省为 10 位
-# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/app/create-passwd.sh)"
+# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/create-passwd.sh)"
+# bash -c "$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/create-passwd.sh)"
 
 function create_passwd(){
   local num=$1

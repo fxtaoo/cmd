@@ -1,6 +1,8 @@
 #!/bin/bash
-# cnetos 安装 kubeadm 初始化准备
+# cnetos 安装 kubeadm
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/centos-kubeadm.sh)"
+# bash -c "$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/centos-kubeadm.sh)"
+
 # 脚本参考 https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
 # 设置主机名
