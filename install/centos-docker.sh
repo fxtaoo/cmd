@@ -26,7 +26,7 @@ yum install -y yum-utils
 docker_ce_repo="https://download.docker.com/linux/centos/docker-ce.repo"
 docker_daemon="docker-daemon"
 
-if ! ping -c 2 google.com ; then
+if ! ping -c 1 google.com ; then
     # 使用腾讯源
     docker_ce_repo="https://mirrors.cloud.tencent.com/docker-ce/linux/centos/docker-ce.repo"
     docker_daemon="docker-daemon-cn"
