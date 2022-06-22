@@ -42,7 +42,6 @@ fxtaooRaw 为 Cloudflare CDN Github Raw
 | [inotifywait.sh](https://github.com/fxtaoo/cmd/blob/master/other/inotifywait.sh) | [监控文件目录变更执行脚本](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/inotifywait.sh) |
 | [kill-ps-grep-str.sh](https://github.com/fxtaoo/cmd/blob/master/other/kill-ps-grep-str.sh) | [杀死指定字符串相关进程](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/kill-ps-grep-str.sh) |
 | [log.sh](https://github.com/fxtaoo/cmd/blob/master/other/log.sh) | [日志相关](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/log.sh) |
-| [new-go.sh](https://github.com/fxtaoo/cmd/blob/master/other/new-go.sh) | [新的 go Code](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/new-go.sh) |
 | [path-add-cmd.sh](https://github.com/fxtaoo/cmd/blob/master/other/path-add-cmd.sh) | [文件夹路径添加到 PATH (递归)](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/path-add-cmd.sh) |
 | [pip-change-mirrors.sh](https://github.com/fxtaoo/cmd/blob/master/other/pip-change-mirrors.sh) | [pip 更改国内源](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/pip-change-mirrors.sh) |
 | [pip-package-update.sh](https://github.com/fxtaoo/cmd/blob/master/other/pip-package-update.sh) | [pip3 包更新](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/pip-package-update.sh) |
