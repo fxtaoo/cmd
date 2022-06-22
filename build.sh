@@ -2,7 +2,6 @@
 # 生成 README.md 文件
 # 提交变更
 
-rm README.md
 ./readmebuild
 
 if [[ $(git status | wc -l) -gt 4 ]] ; then
