@@ -42,7 +42,7 @@ fxtaooRaw 为 Cloudflare CDN Github Raw
 [get-user-name-list.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-user-name-list.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/get-user-name-list.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/get-user-name-list.sh)  
 当前用户列表
 
-[set-disk-mount.sh.sh](https://github.com/fxtaoo/cmd/blob/master/sys/set-disk-mount.sh.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/set-disk-mount.sh.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/set-disk-mount.sh.sh)  
+[set-disk-mount.sh](https://github.com/fxtaoo/cmd/blob/master/sys/set-disk-mount.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/set-disk-mount.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/set-disk-mount.sh)  
 磁盘分区开启挂载
 
 [set-user-passwd.sh](https://github.com/fxtaoo/cmd/blob/master/sys/set-user-passwd.sh)　[githubRaw](https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/set-user-passwd.sh) [fxtaooRaw](https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/set-user-passwd.sh)  
