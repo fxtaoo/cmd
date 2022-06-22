@@ -90,7 +90,7 @@ function set_disk_mount(){
   mount "/dev/${disk_name}1" "/${dir_name}" || error_exit "${disk_name}1 挂载到 $dir_name 失败！"
 
   # 开机挂载
-  uuid=$(bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/get-disk-uuid.sh)" ${disk_name}1)
+  uuid=$(bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/get-disk-uuid.sh) ${disk_name}1")
   if [[ -z $uuid ]] ; then
     error_exit "获取 ${disk_name}1 UUID 失败！"
   fi
