@@ -2,10 +2,10 @@
 # 重置用户密码
 # $1 用户未指定，默认执行脚本用户
 # $2 用户未指定，生成 10 位随机密码
-# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/change-user-passwd.sh)"
-# bash -c "$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/change-user-passwd.sh)"
+# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/set-user-passwd.sh)"
+# bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/set-user-passwd.sh)"
 
-function change_user_passwd(){
+function set_user_passwd(){
   local user_name
   local new_passwd
   user_name=$1
@@ -20,4 +20,4 @@ function change_user_passwd(){
   echo -e "$new_passwd\n$new_passwd" | passwd $user_name
   echo "$user_name 密码修改为：$new_passwd"
 }
-change_user_passwd $1 $2
+set_user_passwd $1 $2
