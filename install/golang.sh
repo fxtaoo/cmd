@@ -3,7 +3,7 @@
 # $1 指定 go 版本号，eg:1.18.3,缺省 1.18
 # $2 指定架构，缺省 linux-amd64
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/golang.sh)"
-# bash -c "$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/golang.sh)"
+# bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/golang.sh)"
 
 go_version=$1
 cpu_type=$2

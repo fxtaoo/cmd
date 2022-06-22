@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 更改为腾讯源
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/debian-change-mirrors.sh)"
-# bash -c "$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/debian-change-mirrors.sh)"
+# bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/debian-change-mirrors.sh)"
 
 function change_debian_mirrors(){
   source /etc/os-release

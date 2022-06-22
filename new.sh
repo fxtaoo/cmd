@@ -38,7 +38,7 @@ done
 
 # 输入名字
 while true ; do
-  read -rp "文件名：" file_name
+  read -rp "  文件名：" file_name
   func_name="$(convert_middle_underline $file_name)"
   if [[ ! -f $file_name ]] ; then
     break;
@@ -46,12 +46,12 @@ while true ; do
   echo -e "重新输入 $file_name 该文件以存在!\n"
 done
 
-read -rp "简介：" intro
+read -rp "  简介：" intro
 
 content="#!/usr/bin/env bash
 # $intro
 # bash -c \"\$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/$sort/$file_name.sh)\"
-# bash -c \"\$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/$sort/$file_name.sh)\"
+# bash -c \"\$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/$sort/$file_name.sh)\"
 
 function $func_name(){
 

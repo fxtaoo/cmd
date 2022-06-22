@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # pip 更改国内源
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/pip-change-mirrors)"
-# bash -c "$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/pip-change-mirrors)"
+# bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/pip-change-mirrors)"
 
 function pip_change_mirrors(){
   if ping -c 2 google.com ; then

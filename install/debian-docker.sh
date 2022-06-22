@@ -2,7 +2,7 @@
 # debian 安装 docker
 # 国内 腾讯源 七牛 Docker Hub 镜像
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/debian-docker.sh)"
-# bash -c "$(wget -O - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/debian-docker.sh)"
+# bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/debian-docker.sh)"
 
 function is_root() {
   if [[ 0 != "$UID" ]]; then # "$(id -nu)" != "root"
