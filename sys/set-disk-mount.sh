@@ -71,14 +71,19 @@ function set_disk_mount(){
   while : ; do
     echo
     if [[ $dir_name == '' ]] ; then
-      read -rp "请输入挂载目录(eg:data，挂载在 /data)：" dir_name
+      read -rp "请输入挂载目录(eg:/data，请输入绝对路径)：" dir_name
     fi
-    if [[ -e "/${dir_name}" ]] ; then
-      echo_error "目录 /${dir_name} 以存在！请重新输入！"
+    if [[ -e "${dir_name}" ]] ; then
+      echo_error "目录 ${dir_name} 以存在！请重新输入！"
       dir_name=''
       continue
     fi
-    mkdir "/${dir_name}"
+    mkdir -p "${dir_name}"
+    if [[ $? != 0 ]] ; then
+      echo_error "创建目录 ${dir_name} 失败！请重新输入！"
+      dir_name=''
+      continue
+    fi
     break
   done
 
@@ -87,7 +92,7 @@ function set_disk_mount(){
   mkfs.ext4 "/dev/${disk_name}1" || error_exit "${disk_name}1 格式化失败！"
 
   # 挂载
-  mount "/dev/${disk_name}1" "/${dir_name}" || error_exit "${disk_name}1 挂载到 $dir_name 失败！"
+  mount "/dev/${disk_name}1" "${dir_name}" || error_exit "${disk_name}1 挂载到 $dir_name 失败！"
 
   # 开机挂载
   uuid=$(bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/get-disk-uuid.sh) ${disk_name}1")
@@ -95,8 +100,8 @@ function set_disk_mount(){
     error_exit "获取 ${disk_name}1 UUID 失败！"
   fi
   cp /etc/fstab "/etc/fstab.$(date +%Y%m%d%H%M%S).bak"
-  echo "UUID=$uuid /${dir_name}                    ext4    defaults        0 0" >> /etc/fstab
-  echo_ok "配置 磁盘 ${disk_name}1 挂载到目录 /${dir_name} 开机自动挂载"
+  echo "UUID=$uuid ${dir_name}                    ext4    defaults        0 0" >> /etc/fstab
+  echo_ok "配置 磁盘 ${disk_name}1 挂载到目录 ${dir_name} 开机自动挂载"
 }
 set_disk_mount $1 $2
 
