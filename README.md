@@ -26,7 +26,7 @@ fxtaooRaw 为 Cloudflare CDN Github Raw
 | | |
 | :---- | :---- |
 | [centos-docker.sh](https://github.com/fxtaoo/cmd/blob/master/install/centos-docker.sh) | [centos 安装 docker](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/centos-docker.sh) |
-| [centos-kernel-lts.sh](https://github.com/fxtaoo/cmd/blob/master/install/centos-kernel-lts.sh) | [centos 安装长期支持内核](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/centos-kernel-lts.sh) |
+| [centos-kernel-lts.sh](https://github.com/fxtaoo/cmd/blob/master/install/centos-kernel-lts.sh) | [centos 7 安装长期支持内核](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/centos-kernel-lts.sh) |
 | [centos-kubeadm.sh](https://github.com/fxtaoo/cmd/blob/master/install/centos-kubeadm.sh) | [cnetos 安装 kubeadm](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/centos-kubeadm.sh) |
 | [debian-cloud-linux.sh](https://github.com/fxtaoo/cmd/blob/master/install/debian-cloud-linux.sh) | [debian 安装 cloud 内核](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/debian-cloud-linux.sh) |
 | [debian-docker.sh](https://github.com/fxtaoo/cmd/blob/master/install/debian-docker.sh) | [debian 安装 docker](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/debian-docker.sh) |
