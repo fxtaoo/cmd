@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # go 指定版本重装
-# $1 指定 go 版本号，eg:1.18.3,缺省 1.18
+# $1 指定 go 版本号，eg:1.18.3,缺省 1.18.3
 # $2 指定架构，缺省 linux-amd64
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/golang.sh)"
 # bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/golang.sh)"
@@ -11,7 +11,7 @@ cpu_type=$2
 go_file_name="go${go_version:=1.18.3}.${cpu_type:=linux-amd64}.tar.gz"
 go_file_path="/tmp/{$go_file_name}"
 
-wget http://mirrors.ustc.edu.cn/go/${go_file_name} -O $go_file_path
+wget http://mirrors.ustc.edu.cn/golang/${go_file_name} -O $go_file_path
 
 if [[ -e $go_file_path ]] ; then
   sudo rm -rf /usr/local/go && \
