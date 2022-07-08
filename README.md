@@ -38,7 +38,8 @@ fxtaooRaw 为 Cloudflare CDN Github Raw
 | [cpu-use-max-calc.sh](https://github.com/fxtaoo/cmd/blob/master/other/cpu-use-max-calc.sh) | [计算 cpu 指定使用比例](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/cpu-use-max-calc.sh) |
 | [create-passwd.sh](https://github.com/fxtaoo/cmd/blob/master/other/create-passwd.sh) | [生成指定位数密码](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/create-passwd.sh) |
 | [docker-compose-update.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-compose-update.sh) | [docker-compose 容器镜像更新重建](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/docker-compose-update.sh) |
-| [docker-rmv-no-run-all.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-rmv-no-run-all.sh) | [删除所有未运行容器与卷](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/docker-rmv-no-run-all.sh) |
+| [docker-rm-grep-str.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-rm-grep-str.sh) | [筛选删除容器](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/docker-rm-grep-str.sh) |
+| [docker-rm-no-run.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-rm-no-run.sh) | [删除所有未运行容器与卷](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/docker-rm-no-run.sh) |
 | [inotifywait.sh](https://github.com/fxtaoo/cmd/blob/master/other/inotifywait.sh) | [监控文件目录变更执行脚本](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/inotifywait.sh) |
 | [kill-ps-grep-str.sh](https://github.com/fxtaoo/cmd/blob/master/other/kill-ps-grep-str.sh) | [杀死指定字符串相关进程](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/kill-ps-grep-str.sh) |
 | [log.sh](https://github.com/fxtaoo/cmd/blob/master/other/log.sh) | [日志相关](https://raw.githubusercontent.com/fxtaoo/cmd/master/other/log.sh) |
