@@ -27,7 +27,7 @@ while true ; do
     break
     ;;
    4 )
-    sort="func"
+    sort="other"
     break
     ;;
    *)
