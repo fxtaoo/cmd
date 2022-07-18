@@ -41,6 +41,6 @@ if [[ $(id -u) != "0" ]]; then
     newgrp docker
 fi
 
-systemctl enable --now docker
+sudo systemctl enable --now docker
 
 
