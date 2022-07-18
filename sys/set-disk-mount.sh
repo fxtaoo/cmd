@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 磁盘分区开启挂载
+# 磁盘分区自动挂载
 # 如果指定的磁盘以挂载，不做更改
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/set-disk-mount.sh)"
 # bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/set-disk-mount.sh)"

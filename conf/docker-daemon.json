@@ -1,4 +1,11 @@
 {
+    "exec-opts": [
+        "native.cgroupdriver=systemd"
+    ],
+    "features": {
+        "buildkit": true
+    },
+    "icc": false,
     "log-driver": "json-file",
     "log-opts": {
         "cache-disabled": "false",

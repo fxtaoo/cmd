@@ -6,6 +6,8 @@
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/inotifywait.sh)"
 # bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/inotifywait.sh)"
 
+set -e
+
 /usr/bin/inotifywait -mrq -e modify,attrib,move,create,delete $1 |
     while read -r path action file; do
         bash $2

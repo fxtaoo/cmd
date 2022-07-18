@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 返回磁盘大小
+# 磁盘大小
 # $1 为磁盘名
 
 function get_disk_size(){

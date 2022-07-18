@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# 杀死指定字符串相关进程
+# 筛选杀死进程
 # $1 指定字符串进程
-# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/kill-ps-grep-str.sh)"
-# bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/kill-ps-grep-str.sh)"
+# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/kill-grep-process.sh)"
+# bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/other/kill-grep-process.sh)"
 
 # grep_str=$1
 

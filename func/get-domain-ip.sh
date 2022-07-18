@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 返回域名 IP
+# 域名 IP
 
 function get_domain_ip(){
   if ! ping -c 1 $1 > /dev/null; then

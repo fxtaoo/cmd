@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 返回出口 IP
+# 出口 IP
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/get-local-ip.sh)"
 # bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/get-local-ip.sh)"
 

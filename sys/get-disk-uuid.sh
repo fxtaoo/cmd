@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 返回磁盘 UUID
+# 磁盘 UUID
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/get-disk-uuid.sh)"
 # bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/sys/get-disk-uuid.sh)"
 

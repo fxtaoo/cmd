@@ -3,17 +3,17 @@
 # bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/centos-kernel-lts.sh)"
 # bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/centos-kernel-lts.sh)"
 
-function kernel_update_centos(){
-    rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
-    yum install -y https://www.elrepo.org/elrepo-release-7.el7.elrepo.noarch.rpm
+set -e
 
-    cp /etc/yum.repos.d/elrepo.repo /etc/yum.repos.d/elrepo.repo.bak
-    sed -i "s/elrepo.org\/linux/mirrors.tuna.tsinghua.edu.cn\/elrepo/g" /etc/yum.repos.d/elrepo.repo
+sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+sudo yum install -y https://www.elrepo.org/elrepo-release-7.el7.elrepo.noarch.rpm
 
-    yum -y --enablerepo=elrepo-kernel install kernel-lt kernel-lt-devel
+sudo cp /etc/yum.repos.d/elrepo.repo /etc/yum.repos.d/elrepo.repo.bak
+sudo sed -i "s/elrepo.org\/linux/mirrors.aliyun.com\/elrepo/g" /etc/yum.repos.d/elrepo.repo
+sudo yum makecache
 
-    grub2-set-default 0
-    grub2-mkconfig -o /etc/grub2.cfg
-}
-kernel_update_centos
+sudo yum -y --enablerepo=elrepo-kernel install kernel-lt kernel-lt-devel
+
+sudo grub2-set-default 0
+sudo grub2-mkconfig -o /etc/grub2.cfg
 

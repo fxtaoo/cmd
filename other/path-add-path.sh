@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 文件夹路径添加到 PATH (递归)
+# 添加 PATH
 # $1 为指定 cmd 绝对路径
 
 function add_path(){

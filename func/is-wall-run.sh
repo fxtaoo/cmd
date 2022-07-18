@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 在墙内则执行命令
+# 墙内则执行一组命令
 # 接受全部参数，当作一条命令执行，参数为空不做任何操作
 
 # function is_wall_run_old(){
