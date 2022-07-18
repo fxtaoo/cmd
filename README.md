@@ -29,7 +29,7 @@ fxtaooRaw 为使用 Cloudflare CDN Github Raw
 | [debian-cloud-kernel.sh](https://github.com/fxtaoo/cmd/blob/master/install/debian-cloud-kernel.sh) | [debian 安装 cloud 内核](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/debian-cloud-kernel.sh) |
 | [docker-centos.sh](https://github.com/fxtaoo/cmd/blob/master/install/docker-centos.sh) | [centos 安装 docker](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/docker-centos.sh) |
 | [docker-debian.sh](https://github.com/fxtaoo/cmd/blob/master/install/docker-debian.sh) | [debian 安装 docker](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/docker-debian.sh) |
-| [golang.sh](https://github.com/fxtaoo/cmd/blob/master/install/golang.sh) | [golang 安装](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/golang.sh) |
+| [golang.sh](https://github.com/fxtaoo/cmd/blob/master/install/golang.sh) | [golang 安装最新版本](https://raw.githubusercontent.com/fxtaoo/cmd/master/install/golang.sh) |
 ## 其他
 | | |
 | :---- | :---- |
