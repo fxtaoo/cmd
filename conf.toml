@@ -1,5 +1,5 @@
 [Info]
-TopPageInfo = "# cmd\n一些 shell 脚本  \nfxtaooRaw 为使用 Cloudflare CDN Github Raw"
+TopPageInfo = "# cmd\n一些 shell 脚本  \nfxtaooRaw 为使用 Cloudflare CDN 的 Github Raw"
 CodeURL = "https://github.com/fxtaoo/cmd/blob/master/"
 GithubRaw = "https://raw.githubusercontent.com/fxtaoo/cmd/master/"
 FxtaooRaw = "https://raw.fxtaoo.dev/fxtaoo/cmd/master/"
