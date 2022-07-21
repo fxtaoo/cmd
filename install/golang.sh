@@ -2,8 +2,8 @@
 # golang 安装最新版本
 # $1 指定 go 版本号（eg:go1.18.4），缺省最新
 # $2 指定架构，缺省尝试自动获取
-# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/golang.sh)"
-# bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/golang.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/golang.sh)"
+# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/golang.sh)"
 
 set -e
 
@@ -11,7 +11,7 @@ download_site='https://go.dev/dl'
 golang_version_api='https://go.dev'
 if ! ping -c 1 google.com;then
     download_site='https://mirrors.aliyun.com/golang'
-    golang_version_api='https://go.fxtaoo.dev'
+    golang_version_api='https://proxy.fxtaoo.dev/go'
 fi
 
 go_version=$1
@@ -65,7 +65,7 @@ if [[ -e $go_file_path ]] ; then
 fi
 
 # 七牛代理
-if [[ $golang_version_api == 'https://go.fxtaoo.dev' ]] ; then
+if [[ $golang_version_api == 'https://proxy.fxtaoo.dev/go' ]] ; then
   (
     PATH="$PATH:/usr/local/go/bin"
     go env -w GO111MODULE=on

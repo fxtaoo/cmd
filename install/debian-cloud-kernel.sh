@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # debian 安装 cloud 内核
-# bash -c "$(curl -fsSL https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/debian-cloud-kernel.sh)"
-# bash -c "$(wget -qO - https://raw.fxtaoo.dev/fxtaoo/cmd/master/install/debian-cloud-kernel.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/debian-cloud-kernel.sh)"
+# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/debian-cloud-kernel.sh)"
 
 set -e
 
