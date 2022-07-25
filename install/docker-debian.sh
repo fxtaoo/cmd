@@ -12,21 +12,22 @@ sudo apt update
 sudo apt install -y \
     ca-certificates \
     curl \
-    gnupg \
-    lsb-release
+    gnupg
 
-normal_url="download.docker.com"
+mirrors="download.docker.com"
 docker_daemon="docker-daemon"
-if ! ping -c 1 google.com ;then
-  normal_url="mirrors.cloud.tencent.com/docker-ce"
+if ! ping -c 1 google.com >/dev/null 2>&1 ;then
+  mirrors="mirrors.cloud.tencent.com/docker-ce"
   docker_daemon="docker-daemon-cn"
 fi
 
+sys_version=$(grep 'VERSION_CODENAME' /etc/os-release | awk -F '=' '{print $2}')
+
 sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://${normal_url}/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+curl -fsSL https://${mirrors}/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://${normal_url}/linux/debian \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://${mirrors}/linux/debian \
+  ${sys_version} stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 

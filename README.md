@@ -15,10 +15,11 @@ proxy.fxtaoo.dev 是使用 Cloudflare CDN 代理 raw.githubusercontent.com
 ## 系统
 | | |
 | :---- | :---- |
-| [debian-mirrors.sh](https://github.com/fxtaoo/cmd/blob/master/sys/debian-mirrors.sh) | [debian apt 腾讯源](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/debian-mirrors.sh) |
+| [debian-mirrors.sh](https://github.com/fxtaoo/cmd/blob/master/sys/debian-mirrors.sh) | [debian apt 源](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/debian-mirrors.sh) |
 | [get-disk-size.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-disk-size.sh) | [磁盘大小](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/get-disk-size.sh) |
 | [get-disk-uuid.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-disk-uuid.sh) | [磁盘 UUID](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/get-disk-uuid.sh) |
 | [get-local-ip.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-local-ip.sh) | [出口 IP](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/get-local-ip.sh) |
+| [get-sys-version.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-sys-version.sh) | [系统版本](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/get-sys-version.sh) |
 | [get-user-name-list.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-user-name-list.sh) | [用户列表](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/get-user-name-list.sh) |
 | [set-disk-mount.sh](https://github.com/fxtaoo/cmd/blob/master/sys/set-disk-mount.sh) | [磁盘分区自动挂载](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/set-disk-mount.sh) |
 | [set-user-passwd.sh](https://github.com/fxtaoo/cmd/blob/master/sys/set-user-passwd.sh) | [重置用户密码](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/set-user-passwd.sh) |

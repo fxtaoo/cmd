@@ -1,16 +1,21 @@
 #!/usr/bin/env bash
-# debian apt 腾讯源
+# debian apt 源
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/debian-mirrors.sh)"
 # bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/debian-mirrors.sh)"
 
 set -e
 
-sudo apt install -y lsb_release
+sys_version=$(grep 'VERSION_CODENAME' /etc/os-release | awk -F '=' '{print $2}')
+
+mirrors='deb.debian.org'
+if ! ping -c 1 google.com >/dev/null 2>&1; then
+  mirrors='${mirrors}'
+fi
 
 cp /etc/apt/sources.list /etc/apt/sources.list.b
-sudo tee /etc/apt/sources.list <<< "deb https://mirrors.cloud.tencent.com/debian/ $(lsb_release -cs) main contrib non-free
-deb https://mirrors.cloud.tencent.com/debian/ $(lsb_release -cs)-updates main contrib non-free
-deb https://mirrors.cloud.tencent.com/debian/ $(lsb_release -cs)-backports main contrib non-free
-deb https://mirrors.cloud.tencent.com/debian-security $(lsb_release -cs)-security main contrib non-free"
+sudo tee /etc/apt/sources.list <<< "deb https://${mirrors}/debian/ ${sys_version} main contrib non-free
+deb https://${mirrors}/debian/ ${sys_version}-updates main contrib non-free
+deb https://${mirrors}/debian/ ${sys_version}-backports main contrib non-free
+deb https://${mirrors}/debian-security ${sys_version}-security main contrib non-free"
 
 sudo apt update
