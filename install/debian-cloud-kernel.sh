@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # debian 安装 cloud 内核
-# $1 启用  backports
+# $1=backports 启用  backports
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/debian-cloud-kernel.sh)"
 # bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/debian-cloud-kernel.sh)"
 

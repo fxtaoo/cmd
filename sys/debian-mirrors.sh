@@ -9,7 +9,7 @@ sys_version=$(grep 'VERSION_CODENAME' /etc/os-release | awk -F '=' '{print $2}')
 
 mirrors='deb.debian.org'
 if ! ping -c 1 google.com >/dev/null 2>&1; then
-  mirrors='${mirrors}'
+  mirrors='mirrors.cloud.tencent.com'
 fi
 
 cp /etc/apt/sources.list /etc/apt/sources.list.b
