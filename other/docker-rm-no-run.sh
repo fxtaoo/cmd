@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # 删除所有未运行容器与卷
+# $1 为排除容器相关字符
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-rm-no-run.sh)"
 # bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-rm-no-run.sh)"
 
@@ -15,11 +16,19 @@
 # docker volume prune
 
 
-docker ps -a | grep 'Exited'
+if [[ -z "$1" ]]; then
+  rm_str=$(docker ps -a | grep 'Exited')
+else
+  rm_str=$(docker ps -a | grep 'Exited' | grep -v $1)
+fi
+
+
+echo "$rm_str"
 
 echo -ne "\033[31m任意键执行删除(docker rm -vf)，退出输入 n|no：\033[0m"
 read -r yn
 if [[ $yn == "n" || $yn == "no" ]] ; then
   exit 0
 fi
-docker rm -v "$(docker ps -a | grep 'Exited' | awk '{print $1}' | xargs)" > /dev/null
+read -ra rm_id <<< "$( echo "$rm_str" | awk '{print $1}' | xargs)"
+docker rm -v "${rm_id[@]}" > /dev/null
