@@ -53,6 +53,8 @@ content="#!/usr/bin/env bash
 # bash -c \"\$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/$sort/$file_name.sh)\"
 # bash -c \"\$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/$sort/$file_name.sh)\"
 
+set -e
+
 function $func_name(){
 
 }
