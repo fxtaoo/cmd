@@ -19,6 +19,9 @@
     },
     "storage-driver": "overlay2",
     "registry-mirrors": [
-        "https://reg-mirror.qiniu.com"
+        "https://hub-mirror.c.163.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://gcr.mirrors.ustc.edu.cn",
+        "https://quay.mirrors.ustc.edu.cn"
     ]
 }
