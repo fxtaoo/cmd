@@ -10,7 +10,7 @@ set -e
 download_site='https://go.dev/dl'
 golang_version_api='https://go.dev'
 if ! ping -c 1 google.com;then
-    download_site='https://mirrors.aliyun.com/golang'
+    download_site='https://mirrors.ustc.edu.cn/golang'
     golang_version_api='https://proxy.fxtaoo.dev/go'
 fi
 
@@ -72,4 +72,3 @@ if [[ $golang_version_api == 'https://proxy.fxtaoo.dev/go' ]] ; then
     go env -w GOPROXY=https://goproxy.cn,direct
   )
 fi
-

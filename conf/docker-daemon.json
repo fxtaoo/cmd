@@ -5,6 +5,7 @@
     "features": {
         "buildkit": true
     },
+    "live-restore": true,
     "icc": false,
     "log-driver": "json-file",
     "log-opts": {
