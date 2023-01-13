@@ -36,6 +36,7 @@ proxy.fxtaoo.dev 是使用 Cloudflare CDN 代理 raw.githubusercontent.com
 | :---- | :---- |
 | [create-passwd.sh](https://github.com/fxtaoo/cmd/blob/master/other/create-passwd.sh) | [生成密码](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/create-passwd.sh) |
 | [docker-cpu-use-max-calc.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-cpu-use-max-calc.sh) | [容器 cpu 指定使用比例](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-cpu-use-max-calc.sh) |
+| [docker-image-clean.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-image-clean.sh) | [删除镜像，设置保留几个版本](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-image-clean.sh) |
 | [docker-rm-grep-str.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-rm-grep-str.sh) | [筛选删除容器](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-rm-grep-str.sh) |
 | [docker-rm-no-run.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-rm-no-run.sh) | [删除所有未运行容器与卷](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-rm-no-run.sh) |
 | [inotifywait.sh](https://github.com/fxtaoo/cmd/blob/master/other/inotifywait.sh) | [监控文件目录变更执行脚本](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/inotifywait.sh) |
