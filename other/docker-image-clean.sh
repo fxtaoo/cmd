@@ -8,7 +8,11 @@ set -e
 
 # 保留最近版本数
 keep_num=$1
-images=$(docker images | awk '{print $1}' | uniq -d)
+if (( keep_num < 1 ));then
+    echo "\$1 必须 >= 1！"
+fi
+
+images=$(docker images | awk '{print $1}' | sort | uniq -d)
 
 for e in $images; do
     e_num=$(docker images | grep -c $e)
