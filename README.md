@@ -34,6 +34,7 @@ proxy.fxtaoo.dev 是使用 Cloudflare CDN 代理 raw.githubusercontent.com
 ## 其他
 | | |
 | :---- | :---- |
+| [centos-ip-link-num.sh](https://github.com/fxtaoo/cmd/blob/master/other/centos-ip-link-num.sh) | [centos ip 连接数](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/centos-ip-link-num.sh) |
 | [create-passwd.sh](https://github.com/fxtaoo/cmd/blob/master/other/create-passwd.sh) | [生成密码](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/create-passwd.sh) |
 | [docker-cpu-use-max-calc.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-cpu-use-max-calc.sh) | [容器 cpu 指定使用比例](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-cpu-use-max-calc.sh) |
 | [docker-image-clean.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-image-clean.sh) | [删除镜像，设置保留几个版本](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-image-clean.sh) |
