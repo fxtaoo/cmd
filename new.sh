@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # 创建符合 readme-build 格式的项目
 
+# pull
+git pull || exit 1
+
 function convert_middle_underline(){
   local middle=$1
   echo "$middle" | sed 's/-/_/g'
