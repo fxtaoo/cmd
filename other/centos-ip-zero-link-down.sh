@@ -33,26 +33,27 @@ is_yes(){
 }
 
 (
+    IFS=$'\n'
     # 时间
     dt=$(date +"%Y%m%d%H%M%S")
 
     # 输出 ip 链接接数
     # 排除内网 10. 等等
-    ips=$(ip a | grep -vwE '10\.*|127\.*|172\.*|inet6'  | grep inet | awk '{print $2}' | cut -f1 -d'/')
+    ips=$(ip a | grep -vwE 'inet6|10\.*|172\.*|192\.*|127\.*' | grep inet | awk '{print $2}' | cut -f1 -d'/')
     result=""
 
     for ip in $ips;do
         eth=$(ip a | grep $ip | awk '{print $NF}')
         num=$(ss -natp | grep -c $ip)
-        result+="$num $eth $ip\n"
+        result="$result
+        $num $eth $ip"
     done
     echo -e $result | sort
 
     # down 网卡、注释配置
-    IFS=$'\n'
     for e in $result;do
-        num=$(echo $e | awk '{print $1}')
         (
+            num=$(echo $e | awk '{print $1}')
             if [[ $num == "0" ]];then
                 echo_point "$e 关闭并注释配置"
                 is_yes
