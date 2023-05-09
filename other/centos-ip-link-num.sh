@@ -6,11 +6,11 @@ set -e
 
 (
     # 排除内网 10. 等等
-    ips=$(ip a | grep -v -E '10\.|inet6|127\.|172\.'  | grep inet | awk '{print $2}' | cut -f1 -d'/')
+    ips=$(ip a | grep -vwE '10\.*|127\.*|172\.*|inet6'  | grep inet | awk '{print $2}' | cut -f1 -d'/')
     result=""
 
     for ip in $ips;do
-        eth=$(ip a | grep $ip | awk '{print $8}')
+        eth=$(ip a | grep $ip | awk '{print $NF}')
         num=$(ss -natp | grep -c $ip)
         result+="$num $eth $ip\n"
     done
