@@ -15,6 +15,7 @@ proxy.fxtaoo.dev 是使用 Cloudflare CDN 代理 raw.githubusercontent.com
 ## 系统
 | | |
 | :---- | :---- |
+| [debian-11-use-rc-local.sh](https://github.com/fxtaoo/cmd/blob/master/sys/debian-11-use-rc-local.sh) | [Debian 11 使用 /etc/rc.local](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/debian-11-use-rc-local.sh) |
 | [debian-mirrors.sh](https://github.com/fxtaoo/cmd/blob/master/sys/debian-mirrors.sh) | [debian apt 源](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/debian-mirrors.sh) |
 | [get-disk-size.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-disk-size.sh) | [磁盘大小](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/get-disk-size.sh) |
 | [get-disk-uuid.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-disk-uuid.sh) | [磁盘 UUID](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/get-disk-uuid.sh) |
