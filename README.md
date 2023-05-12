@@ -49,3 +49,4 @@ proxy.fxtaoo.dev 是使用 Cloudflare CDN 代理 raw.githubusercontent.com
 | [path-add-path.sh](https://github.com/fxtaoo/cmd/blob/master/other/path-add-path.sh) | [添加 PATH](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/path-add-path.sh) |
 | [pip-mirrors.sh](https://github.com/fxtaoo/cmd/blob/master/other/pip-mirrors.sh) | [pip 选择源](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/pip-mirrors.sh) |
 | [pip-package-update.sh](https://github.com/fxtaoo/cmd/blob/master/other/pip-package-update.sh) | [pip 包更新](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/pip-package-update.sh) |
+| [process-daemon.sh](https://github.com/fxtaoo/cmd/blob/master/other/process-daemon.sh) | [进程守护](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/process-daemon.sh) |
