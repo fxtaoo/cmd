@@ -43,6 +43,7 @@ proxy.fxtaoo.dev 是使用 Cloudflare CDN 代理 raw.githubusercontent.com
 | [docker-image-clean.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-image-clean.sh) | [删除镜像，设置保留几个版本](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-image-clean.sh) |
 | [docker-rm-grep-str.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-rm-grep-str.sh) | [筛选删除容器](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-rm-grep-str.sh) |
 | [docker-rm-no-run.sh](https://github.com/fxtaoo/cmd/blob/master/other/docker-rm-no-run.sh) | [删除所有未运行容器与卷](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-rm-no-run.sh) |
+| [git-dropbox-ignored-mac.sh](https://github.com/fxtaoo/cmd/blob/master/other/git-dropbox-ignored-mac.sh) | [Dropbox 忽略 git clone 文件夹](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/git-dropbox-ignored-mac.sh) |
 | [inotifywait.sh](https://github.com/fxtaoo/cmd/blob/master/other/inotifywait.sh) | [监控文件目录变更执行脚本](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/inotifywait.sh) |
 | [kill-grep-process.sh](https://github.com/fxtaoo/cmd/blob/master/other/kill-grep-process.sh) | [筛选杀死进程](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/kill-grep-process.sh) |
 | [log.sh](https://github.com/fxtaoo/cmd/blob/master/other/log.sh) | [日志相关](https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/log.sh) |
