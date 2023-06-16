@@ -28,14 +28,45 @@ if ! jq --version &> /dev/null;then
 fi
 
 if [[ $cf_domain_nam == "" || $cf_ddns_domain_name == "" || $cf_authorization == "" ]];then
-     echo "$1 $2 $3 为必须参数，有未配置，退出。" >> $log_path
+     echo "$1 $2 $3 为必须参数，有未配置，脚本退出。" >> $log_path
+     exit 1
+fi
+
+# cf_ddns_domain_ip=$(ping -c 1 ${cf_ddns_domain_name} | head -n 1 | awk '{print $3}' | sed 's/[():]//g')
+cf_ddns_domain_ip=$(dig ${cf_ddns_domain_name} @1.0.0.1 | grep -E '^[^;;]*IN*A*' | head -n 1 | awk '{print $5}')
+
+# 解析要存在
+if [[ ! $cf_ddns_domain_ip ]];then
+     echo "$cf_ddns_domain_name 二级域名未配置，脚本退出。" >> $log_path
+     exit 1
 fi
 
 while true;do
      # 检查出口 ip 与解析是否一致
-     export_ip=$(curl -s https://api.ipify.org)
-     cf_ddns_domain_ip=$(ping -c 1 ${cf_ddns_domain_name} | head -n 1 | awk '{print $3}' | sed 's/[():]//g')
-     if [[ "$export_ip" != "" && "$export_ip" != "$cf_ddns_domain_ip" ]];then
+     query_export_ip_api=""
+     export_ip=""
+
+     while [[ ! $export_ip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]];do
+          case $((RANDOM%5+1)) in
+               1)
+                    query_export_ip_api="https://api.ipify.org"
+               ;;
+               2)
+                    query_export_ip_api="https://ip.3322.net"
+               ;;
+               3)
+                    query_export_ip_api="https://ifconfig.me"
+               ;;
+               4)
+                    query_export_ip_api="http://ip.sb"
+               ;;
+               5)
+                    query_export_ip_api="https://checkip.amazonaws.com"
+          esac
+          export_ip=$(curl -s $query_export_ip_api)
+     done
+
+     if [[ "$export_ip" != "$cf_ddns_domain_ip" ]];then
           # 验证 cf_authorization
           success=$(curl -sX GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
           -H "Authorization: Bearer ${cf_authorization}" \
@@ -69,16 +100,8 @@ while true;do
           echo $log >> $log_path
 
           success=$(echo $log | awk '{print $5}')
-          if [[ $success != "true" ]];then
-               echo "错误，脚本退出。" >> $log_path
-               exit 1
-          fi
-
-          # 更新 dns 解析后，至少暂停 15 分钟等待解析生效
-          if (( ttl > 15*60 ));then
-               sleep $(( ttl-15*60 ))
-          else
-               sleep $(( 15*60-ttl ))
+          if [[ $success == "true" ]];then
+               cf_ddns_domain_ip=$export_ip
           fi
      fi
 
