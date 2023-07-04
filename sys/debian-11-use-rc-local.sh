@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Debian 11 使用 /etc/rc.local
 # 参考：https://u.sb/debian-rc-local/
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/debian-11-use-rc-local.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/sys/debian-11-use-rc-local.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/debian-11-use-rc-local.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/sys/debian-11-use-rc-local.sh)"
 
 set -e
 

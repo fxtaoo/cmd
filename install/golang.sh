@@ -2,8 +2,8 @@
 # golang 安装最新版本
 # $1 指定 go 版本号（eg:go1.18.4），缺省最新
 # $2 指定架构，缺省尝试自动获取
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/golang.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/golang.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/golang.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/golang.sh)"
 
 set -e
 

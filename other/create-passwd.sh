@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # 生成密码
 # $1 为指定位数，缺省为 10 位
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/create-passwd.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/create-passwd.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/create-passwd.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/create-passwd.sh)"
 
 function create_passwd(){
   local num=$1

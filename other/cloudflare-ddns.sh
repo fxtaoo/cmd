@@ -7,8 +7,8 @@
 # 1 个为可选参数：
 # $4 ttl 时间，单位分钟，同时为脚本定期执行时间，缺省为 3。
 # 日志默认位置，脚本文件同目录下 cloudflare-ddns.log 文件
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/cloudflare-ddns.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/cloudflare-ddns.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/cloudflare-ddns.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/cloudflare-ddns.sh)"
 
 cf_domain_nam=$1
 cf_ddns_domain_name=$2

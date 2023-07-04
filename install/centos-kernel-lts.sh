@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # centos 7 安装长期支持内核
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/centos-kernel-lts.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/centos-kernel-lts.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/centos-kernel-lts.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/centos-kernel-lts.sh)"
 
 set -e
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # debian 安装 docker
 # 国内 腾讯源 七牛 Docker Hub 镜像
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/docker-debian.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/docker-debian.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/docker-debian.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/docker-debian.sh)"
 
 set -e
 
@@ -33,7 +33,7 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # docker 配置
 mkdir -p /etc/docker
-sudo curl -o /etc/docker/daemon.json https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/conf/${docker_daemon}.json
+sudo curl -o /etc/docker/daemon.json https://proxy.fxtaoo.dev/cmd/conf/${docker_daemon}.json
 
 # 非root 用户加入 docker 用户组
 if [[ $(id -u) != "0" ]]; then

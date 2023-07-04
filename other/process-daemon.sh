@@ -3,8 +3,8 @@
 # 守护进程的执行文件（绝对路径）与参数写入脚本文件同目录下 process-daemon-list 文本
 # 换行分隔多个进程
 # $1 为检查间隔时间，单位秒，缺省为 3。
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/process-daemon.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/process-daemon.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/process-daemon.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/process-daemon.sh)"
 
 path=$(dirname $0)
 sleep_time=$1

@@ -3,8 +3,8 @@
 # 需要安装 inotify-tools
 # $1 文件或目录 绝对路径
 # $2 执行脚本 绝对路径
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/inotifywait.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/inotifywait.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/inotifywait.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/inotifywait.sh)"
 
 set -e
 

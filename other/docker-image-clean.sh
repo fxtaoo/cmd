@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # 删除镜像，设置保留几个版本
 # $1 为保留版本数量（按 CREATED 时间由近到远依次），其余删除
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-image-clean.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/docker-image-clean.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/docker-image-clean.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/docker-image-clean.sh)"
 
 set -e
 

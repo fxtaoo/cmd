@@ -50,8 +50,8 @@ read -rp "  简介：" intro
 
 content="#!/usr/bin/env bash
 # $intro
-# bash -c \"\$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/$sort/$file_name.sh)\"
-# bash -c \"\$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/$sort/$file_name.sh)\"
+# bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/$sort/$file_name.sh)\"
+# bash -c \"\$(curl -fsSL https://proxy.fxtaoo.dev/cmd/$sort/$file_name.sh)\"
 
 set -e
 

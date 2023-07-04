@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # pip 选择源
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/pip_mirrors.sh)"
-# bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/install/pip_mirrors.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/pip_mirrors.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/pip_mirrors.sh)"
 
 function pip_mirrors(){
   if ping -c 1 google.com ; then
