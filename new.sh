@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 # 创建符合 readme-build 格式的项目
 
-# pull
-git pull || exit 1
-
 function convert_middle_underline(){
   local middle=$1
   echo "$middle" | sed 's/-/_/g'
@@ -66,4 +63,6 @@ function $func_name(){
 # 创建文件
 echo "$content"  > ./$sort/$file_name.sh
 
+code ./$sort/$file_name.sh
 
+bash create_readme.sh
