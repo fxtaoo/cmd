@@ -10,8 +10,6 @@
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/cloudflare-ddns.sh)"
 # bash -c "$(wget -qO - https://proxy.fxtaoo.dev/raw/fxtaoo/cmd/master/other/cloudflare-ddns.sh)"
 
-set -e
-
 cf_domain_nam=$1
 cf_ddns_domain_name=$2
 cf_authorization=$3
@@ -46,8 +44,12 @@ while true;do
      query_export_ip_api=""
      export_ip=""
 
+     if [[ ! -p /tmp/cloudflare-ddns ]];then
+          mkfifo -m 777 /tmp/cloudflare-ddns
+     fi
+
      while [[ ! $export_ip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]];do
-          case $((RANDOM%5+1)) in
+          case $((RANDOM%6+1)) in
                1)
                     query_export_ip_api="https://api.ipify.org"
                ;;
@@ -62,8 +64,16 @@ while true;do
                ;;
                5)
                     query_export_ip_api="https://checkip.amazonaws.com"
+               ;;
+               6)
+                    query_export_ip_api="http://whatismyip.akamai.com"
+               ;;
           esac
-          export_ip=$(curl -s $query_export_ip_api)
+          (
+               export_ip=$(curl -s $query_export_ip_api)
+               echo "$export_ip" > /tmp/cloudflare-ddns &
+          )
+          read -r export_ip < /tmp/cloudflare-ddns
      done
 
      if [[ "$export_ip" != "$cf_ddns_domain_ip" ]];then

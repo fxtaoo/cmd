@@ -12,13 +12,20 @@ sleep_time=$1
 while true;do
     datetime=$(date +"%Y-%m-%d %H:%M")
     while IFS=$'\n';read -r process;do
-        process_file=$(echo $process | awk '{print $1}')
-        num=$(ps aux | grep -v "grep" | grep -wc "$process_file")
-        if [[ $process_file != "" ]] && (( num==0 ));then
+        process_path=$(echo $process | awk '{print $1}')
+        process_name=$(basename $process_path)
+        num=$(pidof $process_name)
+        if (( num==0 ));then
+            num=$(ps axu | grep -v grep | grep -c "./$process_name")
+        fi
+        if [[ $process != "" ]] && (( num==0 ));then
             (
-                cd "$(dirname $process_file)"
-                eval nohup $process &
-                echo "$datetime 启动 ${process_file}" >> ${path}/process-daemon.log
+                cd "$(dirname $process_path)"
+                # 所有参数
+                process_p=$(echo $process | awk '{ for (i = 2; i <= NF; i++) print $i }')
+                chmod u+x $process_name
+                eval nohup ./$process_name $process_p &
+                echo "$datetime 启动 ${process}" >> ${path}/process-daemon.log
             )
         fi
     done <${path}/process-daemon-list
