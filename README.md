@@ -22,6 +22,7 @@ proxy.fxtaoo.dev 使用 Cloudflare CDN 代理 raw.githubusercontent.com<details>
 | [docker-centos.sh](https://github.com/fxtaoo/cmd/blob/master/install/docker-centos.sh) | [ centos 安装 docker](https://proxy.fxtaoo.dev/cmd/install/docker-centos.sh) |
 | [docker-debian.sh](https://github.com/fxtaoo/cmd/blob/master/install/docker-debian.sh) | [ debian 安装 docker](https://proxy.fxtaoo.dev/cmd/install/docker-debian.sh) |
 | [golang.sh](https://github.com/fxtaoo/cmd/blob/master/install/golang.sh) | [ golang 安装最新版本](https://proxy.fxtaoo.dev/cmd/install/golang.sh) |
+| [watchexec.sh](https://github.com/fxtaoo/cmd/blob/master/install/watchexec.sh) | [ linux 安装 watchexec gun 版本](https://proxy.fxtaoo.dev/cmd/install/watchexec.sh) |
 </details>
 <details> <summary>sys</summary>
 
