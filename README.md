@@ -44,6 +44,7 @@ proxy.fxtaoo.dev 使用 Cloudflare CDN 代理 raw.githubusercontent.com<details>
 
 | 文件名（github） | 介绍（cloudflare cdn） |
 | :- | :- |
+| [brew.sh](https://github.com/fxtaoo/cmd/blob/master/other/brew.sh) | [ 记录 macOS 中 brew 应用](https://proxy.fxtaoo.dev/cmd/other/brew.sh) |
 | [centos-ip-link-num.sh](https://github.com/fxtaoo/cmd/blob/master/other/centos-ip-link-num.sh) | [ centos ip 连接数](https://proxy.fxtaoo.dev/cmd/other/centos-ip-link-num.sh) |
 | [centos-ip-zero-link-down.sh](https://github.com/fxtaoo/cmd/blob/master/other/centos-ip-zero-link-down.sh) | [ CentOS ip 0 连接数,关闭网卡、注释配置 ifcfg-eth](https://proxy.fxtaoo.dev/cmd/other/centos-ip-zero-link-down.sh) |
 | [cloudflare-ddns.sh](https://github.com/fxtaoo/cmd/blob/master/other/cloudflare-ddns.sh) | [ Cloudflare DDNS](https://proxy.fxtaoo.dev/cmd/other/cloudflare-ddns.sh) |
