@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# centos ip 连接数
-# ！仅测试过 CentOS 7
+# centos ip 连接数 ！仅测试 centos 7
 
-set -e
+set -eu
 
 (
     # 排除内网 10. 等等

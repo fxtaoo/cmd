@@ -5,7 +5,10 @@
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/golang.sh)"
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/golang.sh)"
 
-set -e
+set -eu
+
+go_version=$1
+type=$2
 
 download_site='https://go.dev/dl'
 golang_version_api='https://go.dev'
@@ -14,16 +17,12 @@ if ! ping -c 1 google.com;then
     golang_version_api='https://proxy.fxtaoo.dev/go'
 fi
 
-go_version=$1
-type=$2
-
-
 if [[ -z $go_version ]];then
  go_version=$(curl -fsSL ${golang_version_api}/VERSION?m=text)
 fi
 
-# golang 以安装，比较版本号
-if which go >/dev/null 2>&1;then
+# golang 已安装，比较版本号
+if which go &> /dev/null;then
   v1=${go_version#*.}
   v2=$(go version | awk '{print $3}')
   v2=${v2#*.}
@@ -34,7 +33,7 @@ if which go >/dev/null 2>&1;then
   fi
 fi
 
-
+# 安装或更新
 if [[ -z "$type" ]]; then
   case $(uname -s) in
     Linux)
@@ -54,21 +53,15 @@ if [[ -z "$type" ]]; then
 fi
 
 go_file_name="${go_version}.${type}.tar.gz"
-go_file_path="/tmp/${go_file_name}"
+tmpfile=$(mktemp)
 
-wget ${download_site}/${go_file_name} -O $go_file_path
+wget ${download_site}/${go_file_name} -O $tmpfile && sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf $tmpfile
 
-if [[ -e $go_file_path ]] ; then
-  sudo rm -rf /usr/local/go && \
-  sudo tar -C /usr/local -xzf $go_file_path
-  rm -f $go_file_path
-fi
+rm -f $tmpfile
 
 # 七牛代理
 if [[ $golang_version_api == 'https://proxy.fxtaoo.dev/go' ]] ; then
-  (
     PATH="$PATH:/usr/local/go/bin"
     go env -w GO111MODULE=on
     go env -w GOPROXY=https://goproxy.cn,direct
-  )
 fi

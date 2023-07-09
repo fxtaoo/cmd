@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# 监控文件目录变更执行脚本
+# 文件目录变更执行脚本
 # 需要安装 inotify-tools
 # $1 文件或目录 绝对路径
 # $2 执行脚本 绝对路径
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/inotifywait.sh)"
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/inotifywait.sh)"
 
-set -e
+set -eu
 
 /usr/bin/inotifywait -mrq -e modify,attrib,move,create,delete $1 |
     while read -r path action file; do

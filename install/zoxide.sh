@@ -4,7 +4,7 @@
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/zoxide.sh)"
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/zoxide.sh)"
 
-set -e
+set -eu
 
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 

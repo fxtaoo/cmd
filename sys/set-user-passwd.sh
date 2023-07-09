@@ -1,7 +1,7 @@
 #!/bin/bash
 # 重置用户密码
-# $1 用户未指定，默认执行脚本用户
-# $2 用户未指定，生成 10 位随机密码
+# $1 缺省执行脚本用户
+# $2 缺省生成 10 位随机密码
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/set-user-passwd.sh)"
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/sys/set-user-passwd.sh)"
 
@@ -15,7 +15,7 @@ function set_user_passwd(){
   fi
 
   if $new_passwd ; then
-    new_passwd=$(bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/create-passwd.sh)")
+    new_passwd=$(bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/func/create-passwd.sh) $new_passwd")
   fi
   echo -e "$new_passwd\n$new_passwd" | passwd $user_name
   echo "$user_name 密码修改为：$new_passwd"

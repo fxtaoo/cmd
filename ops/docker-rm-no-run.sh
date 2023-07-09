@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# 删除所有未运行容器与卷
+# 删除未运行容器与卷
 # $1 为排除容器相关字符
-# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/docker-rm-no-run.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/docker-rm-no-run.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/ops/docker-rm-no-run.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/ops/docker-rm-no-run.sh)"
 
 # docker_ps_all=$(docker ps -a | cut -d ' ' -f1 | sed 's/CONTAINER//') # 换行存储到字符串变成了空格
 # docker_ps_quiet=$(docker ps --quiet)

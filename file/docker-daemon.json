@@ -5,9 +5,9 @@
     "features": {
         "buildkit": true
     },
+    "live-restore": true,
     "icc": false,
     "log-driver": "json-file",
-    "live-restore": true,
     "log-opts": {
         "cache-disabled": "false",
         "cache-max-file": "5",
@@ -20,13 +20,7 @@
     },
     "storage-driver": "overlay2",
     "dns": [
-        "223.5.5.5",
-        "1.0.0.1"
-    ],
-    "registry-mirrors": [
-        "https://hub-mirror.c.163.com",
-        "https://docker.mirrors.ustc.edu.cn",
-        "https://gcr.mirrors.ustc.edu.cn",
-        "https://quay.mirrors.ustc.edu.cn"
+        "8.8.8.8",
+        "1.1.1.1"
     ]
 }

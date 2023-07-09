@@ -2,10 +2,10 @@
 # Dropbox 忽略 git clone 文件夹
 # $1 git clone 路径
 # https://help.dropbox.com/zh-cn/sync/ignored-files
-# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/git-dropbox-ignored-mac.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/git-dropbox-ignored-mac.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/mac/git-dropbox-ignored-mac.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/mac/git-dropbox-ignored-mac.sh)"
 
-set -e
+set -eu
 
 git_url=$1
 dir_name=${git_url##*/}

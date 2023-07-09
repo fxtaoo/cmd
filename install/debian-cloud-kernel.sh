@@ -4,7 +4,7 @@
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/debian-cloud-kernel.sh)"
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/debian-cloud-kernel.sh)"
 
-set -e
+set -eu
 
 sys_version=$(grep 'VERSION_CODENAME' /etc/os-release | awk -F '=' '{print $2}')
 
@@ -15,7 +15,6 @@ else
   sudo apt update \
   && sudo apt install -y linux-image-cloud-amd64 linux-headers-cloud-amd64
 fi
-
 
 # dpkg -l | grep linux-image
 # apt purge

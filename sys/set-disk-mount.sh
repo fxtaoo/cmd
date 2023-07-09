@@ -4,6 +4,7 @@
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/set-disk-mount.sh)"
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/sys/set-disk-mount.sh)"
 
+
 # 正确绿色
 function echo_ok(){
   echo -e "\033[32m$1\033[0m"
@@ -95,7 +96,7 @@ function set_disk_mount(){
   mount "/dev/${disk_name}1" "${dir_name}" || error_exit "${disk_name}1 挂载到 $dir_name 失败！"
 
   # 开机挂载
-  uuid=$(bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/get-disk-uuid.sh) ${disk_name}1")
+  uuid=$(bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/sys/get-sys-version.sh) ${disk_name}1")
   if [[ -z $uuid ]] ; then
     error_exit "获取 ${disk_name}1 UUID 失败！"
   fi

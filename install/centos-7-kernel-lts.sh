@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # centos 7 安装长期支持内核
-# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/centos-kernel-lts.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/centos-kernel-lts.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/centos-7-kernel-lts.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/centos-7-kernel-lts.sh)"
 
-set -e
+set -eu
 
 sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 sudo yum install -y https://www.elrepo.org/elrepo-release-7.el7.elrepo.noarch.rpm

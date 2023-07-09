@@ -2,9 +2,6 @@
 # 域名 IP
 
 function get_domain_ip(){
-  if ! ping -c 1 $1 > /dev/null; then
-    exit 2
-  fi
-  ping $1 -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'
+  dig $1 @1.0.0.1 | grep -E '^[^;;]*IN*A*' | head -n 1 | awk '{print $5}'
 }
 get_domain_ip $1

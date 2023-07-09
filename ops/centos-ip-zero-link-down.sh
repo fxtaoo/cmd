@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-# CentOS ip 0 连接数,关闭网卡、注释配置 ifcfg-eth
-# ！仅测试过 CentOS 5、7
-# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/centos-ip-zero-link-down.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/centos-ip-zero-link-down.sh)"
+# centos ip 0 连接数，关闭网卡、注释 ifcfg-eth ！仅测试 centos 5、7
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/ops/centos-ip-zero-link-down.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/ops/centos-ip-zero-link-down.sh)"
 
-# set -e
+# set -eu
 
 # 正确绿色
 echo_ok(){
