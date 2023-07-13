@@ -4,7 +4,7 @@
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/ma c/brew.sh)"
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/mac/brew.sh)"
 
-set -ex
+set -e
 
 if [[ ${BREW_LIST_PATH} == "" ]];then
     BREW_LIST_PATH="$(dirname ${BASH_SOURCE[0]})/brew-list"

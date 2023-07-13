@@ -12,4 +12,4 @@ if [[ "$*" == "" ]];then
     exit 1
 fi
 
-watchexec -p --delay-run 2 "$*"
+watchexec -p --delay-run 1 "$*"
