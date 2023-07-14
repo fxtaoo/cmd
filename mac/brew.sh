@@ -20,7 +20,7 @@ case $cmd in
         for app in $apps;do
             # 字符串不为 -- 开头，且安装成功
             # "${string:0:2}" == "--"
-            if [[ ! $app =~ ^--.* ]] && brew install $app;then
+            if [[ ! $app =~ ^--.* ]] && eval brew install $app;then
                 echo "$app" >> $BREW_LIST_PATH
             fi
         done
@@ -31,12 +31,12 @@ case $cmd in
     uninstall)
          for app in $apps;do
             # 字符串不为 -- 开头，且卸载成功
-            if [[ ! $app =~ ^--.* ]] && brew uninstall $app;then
+            if [[ ! $app =~ ^--.* ]] && eval brew uninstall $app;then
                  /opt/homebrew/opt/gnu-sed/libexec/gnubin/sed -i "/$app/d" $BREW_LIST_PATH
             fi
         done
     ;;
     *)
         # 执行失败，脚本停止，执行成功脚本退出
-        brew "$*"
+        eval brew "$*"
 esac
