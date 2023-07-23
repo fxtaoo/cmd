@@ -37,9 +37,15 @@ function centos_install(){
   sudo yum makecache fast && sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 }
 
-#
+mirrors="download.docker.com"
+docker_daemon="https://raw.githubusercontent.com/fxtaoo/cmd/master/file/docker-daemon.json"
+if ! ping -c 1 google.com &> /dev/null ;then
+  mirrors="mirrors.cloud.tencent.com/docker-ce"
+  docker_daemon="https://proxy.fxtaoo.dev/cmd/file/docker-daemon.json"
+fi
 
-case $(grep -w ID /etc/os-release | awk -F '=' '{print $2}') in
+# 版本选择
+case $(grep -w ID /etc/os-release | awk -F '=' '{print $2}' | sed 's/"//g') in
   debian)
     debian_install
     ;;
@@ -52,12 +58,6 @@ case $(grep -w ID /etc/os-release | awk -F '=' '{print $2}') in
     ;;
 esac
 
-mirrors="download.docker.com"
-docker_daemon="https://raw.githubusercontent.com/fxtaoo/cmd/master/file/docker-daemon.json"
-if ! ping -c 1 google.com &> /dev/null ;then
-  mirrors="mirrors.cloud.tencent.com/docker-ce"
-  docker_daemon="https://proxy.fxtaoo.dev/cmd/file/docker-daemon.json"
-fi
 
 # docker 配置
 sudo mkdir -p /etc/docker
