@@ -21,7 +21,7 @@ fi
 func_name=""
 
 case $sort in
-    "file" | "install" | "mac" | "ops" | "other")
+    "file" | "install" | "macos" | "ops" | "other")
     ;;
     "func" | "sys")
         if [[ $sort == "func" ]] || [[ $sort == "sys" ]];then

@@ -2,8 +2,8 @@
 # 记录 macOS 中 brew 应用
 # 环境变量 $BREW_LIST_PATH 指定 brew-list 路径，缺省在 brew.sh 同目录中
 # 注意使用 gnu-sed
-# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/ma c/brew.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/mac/brew.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/macos/brew.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/macos/brew.sh)"
 
 set -e
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 文件目录变更执行脚本
-# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/mac/wexec.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/mac/wexec.sh)"
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/macos/wexec.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/macos/wexec.sh)"
 
 set -eu
 

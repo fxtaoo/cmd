@@ -3,7 +3,7 @@
 一些 shell 脚本
 proxy.fxtaoo.dev 使用 Cloudflare CDN 代理 raw.githubusercontent.com<details> <summary>install</summary>
 
-| 文件名（github） | 介绍（cloudflare cdn） |
+| 文件名 | 介绍 |
 | :- | :- |
 | [centos-7-kernel-lts.sh](https://github.com/fxtaoo/cmd/blob/master/install/centos-7-kernel-lts.sh) | [ centos 7 安装长期支持内核](https://proxy.fxtaoo.dev/cmd/install/centos-7-kernel-lts.sh) |
 | [debian-cloud-kernel.sh](https://github.com/fxtaoo/cmd/blob/master/install/debian-cloud-kernel.sh) | [ debian 安装 cloud 内核](https://proxy.fxtaoo.dev/cmd/install/debian-cloud-kernel.sh) |
@@ -15,7 +15,7 @@ proxy.fxtaoo.dev 使用 Cloudflare CDN 代理 raw.githubusercontent.com<details>
 </details>
 <details> <summary>ops</summary>
 
-| 文件名（github） | 介绍（cloudflare cdn） |
+| 文件名 | 介绍 |
 | :- | :- |
 | [centos-ip-link-num.sh](https://github.com/fxtaoo/cmd/blob/master/ops/centos-ip-link-num.sh) | [ centos ip 连接数 ！仅测试 centos 7](https://proxy.fxtaoo.dev/cmd/ops/centos-ip-link-num.sh) |
 | [centos-ip-zero-link-down.sh](https://github.com/fxtaoo/cmd/blob/master/ops/centos-ip-zero-link-down.sh) | [ centos ip 0 连接数，关闭网卡、注释 ifcfg-eth ！仅测试 centos 5、7](https://proxy.fxtaoo.dev/cmd/ops/centos-ip-zero-link-down.sh) |
@@ -31,7 +31,7 @@ proxy.fxtaoo.dev 使用 Cloudflare CDN 代理 raw.githubusercontent.com<details>
 </details>
 <details> <summary>sys</summary>
 
-| 文件名（github） | 介绍（cloudflare cdn） |
+| 文件名 | 介绍 |
 | :- | :- |
 | [get-disk-size.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-disk-size.sh) | [ 磁盘大小](https://proxy.fxtaoo.dev/cmd/sys/get-disk-size.sh) |
 | [get-disk-uuid.sh](https://github.com/fxtaoo/cmd/blob/master/sys/get-disk-uuid.sh) | [ 磁盘 UUID](https://proxy.fxtaoo.dev/cmd/sys/get-disk-uuid.sh) |
@@ -41,19 +41,19 @@ proxy.fxtaoo.dev 使用 Cloudflare CDN 代理 raw.githubusercontent.com<details>
 | [set-disk-mount.sh](https://github.com/fxtaoo/cmd/blob/master/sys/set-disk-mount.sh) | [ 磁盘分区自动挂载](https://proxy.fxtaoo.dev/cmd/sys/set-disk-mount.sh) |
 | [set-user-passwd.sh](https://github.com/fxtaoo/cmd/blob/master/sys/set-user-passwd.sh) | [ 重置用户密码](https://proxy.fxtaoo.dev/cmd/sys/set-user-passwd.sh) |
 </details>
-<details> <summary>mac</summary>
+<details> <summary>macos</summary>
 
-| 文件名（github） | 介绍（cloudflare cdn） |
+| 文件名 | 介绍 |
 | :- | :- |
-| [brew.sh](https://github.com/fxtaoo/cmd/blob/master/mac/brew.sh) | [ 记录 macOS 中 brew 应用](https://proxy.fxtaoo.dev/cmd/mac/brew.sh) |
-| [dir-git-pull.sh](https://github.com/fxtaoo/cmd/blob/master/mac/dir-git-pull.sh) | [ 含有 .git 文件夹执行 git pull](https://proxy.fxtaoo.dev/cmd/mac/dir-git-pull.sh) |
-| [git-dropbox-ignored-mac.sh](https://github.com/fxtaoo/cmd/blob/master/mac/git-dropbox-ignored-mac.sh) | [ Dropbox 忽略 git clone 文件夹](https://proxy.fxtaoo.dev/cmd/mac/git-dropbox-ignored-mac.sh) |
-| [ln-dir-desktop.sh](https://github.com/fxtaoo/cmd/blob/master/mac/ln-dir-desktop.sh) | [ 桌面创建当前目录快捷方式](https://proxy.fxtaoo.dev/cmd/mac/ln-dir-desktop.sh) |
-| [wexec.sh](https://github.com/fxtaoo/cmd/blob/master/mac/wexec.sh) | [ 文件目录变更执行脚本](https://proxy.fxtaoo.dev/cmd/mac/wexec.sh) |
+| [brew.sh](https://github.com/fxtaoo/cmd/blob/master/macos/brew.sh) | [ 记录 macOS 中 brew 应用](https://proxy.fxtaoo.dev/cmd/macos/brew.sh) |
+| [dir-git-pull.sh](https://github.com/fxtaoo/cmd/blob/master/macos/dir-git-pull.sh) | [ 含有 .git 文件夹执行 git pull](https://proxy.fxtaoo.dev/cmd/macos/dir-git-pull.sh) |
+| [git-dropbox-ignored-mac.sh](https://github.com/fxtaoo/cmd/blob/master/macos/git-dropbox-ignored-mac.sh) | [ Dropbox 忽略 git clone 文件夹](https://proxy.fxtaoo.dev/cmd/macos/git-dropbox-ignored-mac.sh) |
+| [ln-dir-desktop.sh](https://github.com/fxtaoo/cmd/blob/master/macos/ln-dir-desktop.sh) | [ 桌面创建当前目录快捷方式](https://proxy.fxtaoo.dev/cmd/macos/ln-dir-desktop.sh) |
+| [wexec.sh](https://github.com/fxtaoo/cmd/blob/master/macos/wexec.sh) | [ 文件目录变更执行脚本](https://proxy.fxtaoo.dev/cmd/macos/wexec.sh) |
 </details>
 <details> <summary>other</summary>
 
-| 文件名（github） | 介绍（cloudflare cdn） |
+| 文件名 | 介绍 |
 | :- | :- |
 | [cloudflare-ddns.sh](https://github.com/fxtaoo/cmd/blob/master/other/cloudflare-ddns.sh) | [ Cloudflare DDNS](https://proxy.fxtaoo.dev/cmd/other/cloudflare-ddns.sh) |
 | [inotifywait.sh](https://github.com/fxtaoo/cmd/blob/master/other/inotifywait.sh) | [ 文件目录变更执行脚本](https://proxy.fxtaoo.dev/cmd/other/inotifywait.sh) |
@@ -63,7 +63,7 @@ proxy.fxtaoo.dev 使用 Cloudflare CDN 代理 raw.githubusercontent.com<details>
 </details>
 <details> <summary>file</summary>
 
-| 文件名（github） | 介绍（cloudflare cdn） |
+| 文件名 | 介绍 |
 | :- | :- |
 | [docker-daemon-cn.json](https://github.com/fxtaoo/cmd/blob/master/file/docker-daemon-cn.json) | [    "exec-opts": [](https://proxy.fxtaoo.dev/cmd/file/docker-daemon-cn.json) |
 | [docker-daemon.json](https://github.com/fxtaoo/cmd/blob/master/file/docker-daemon.json) | [    "exec-opts": [](https://proxy.fxtaoo.dev/cmd/file/docker-daemon.json) |
