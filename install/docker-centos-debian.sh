@@ -41,7 +41,7 @@ mirrors="download.docker.com"
 docker_daemon="https://raw.githubusercontent.com/fxtaoo/cmd/master/file/docker-daemon.json"
 if ! ping -c 1 google.com &> /dev/null ;then
   mirrors="mirrors.cloud.tencent.com/docker-ce"
-  docker_daemon="https://proxy.fxtaoo.dev/cmd/file/docker-daemon.json"
+  docker_daemon="https://proxy.fxtaoo.dev/cmd/file/docker-daemon-cn.json"
 fi
 
 # 版本选择
