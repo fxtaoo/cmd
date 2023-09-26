@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 生成 README.md
 
-cloudflare_cdn="https://proxy.fxtaoo.dev/cmd/"
+cloudflare_cdn="https://proxy.fxtaoo.com/cmd/"
 github="https://github.com/fxtaoo/cmd/blob/master/"
 
 # 地址、注释
@@ -11,7 +11,7 @@ find install/* ops/* sys/* macos/* other/* file/* -print0 | xargs -0 -I% awk 'FN
 data="# cmd
 
 一些 shell 脚本
-proxy.fxtaoo.dev 使用 Cloudflare CDN 代理 raw.githubusercontent.com"
+proxy.fxtaoo.com 使用 Cloudflare CDN 代理 raw.githubusercontent.com"
 head=""
 head_next=""
 while IFS=$'\n';read -r path;read -r intro; do

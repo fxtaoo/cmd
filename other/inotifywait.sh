@@ -4,7 +4,7 @@
 # $1 文件或目录 绝对路径
 # $2 执行脚本 绝对路径
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/inotifywait.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/inotifywait.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/other/inotifywait.sh)"
 
 set -eu
 

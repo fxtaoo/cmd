@@ -2,7 +2,7 @@
 # debian 使用 /etc/rc.local
 # 参考：https://u.sb/debian-rc-local/
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/ops/debian-11-use-rc-local.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/ops/debian-11-use-rc-local.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/ops/debian-11-use-rc-local.sh)"
 
 set -eu
 

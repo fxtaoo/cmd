@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # Cloudflare DDNS
 # 3 个为必须参数：
-# $1 域名，例如：fxtaoo.dev。
-# $2 二级域名，例如 home.fxtaoo.dev。
+# $1 域名，例如：fxtaoo.com。
+# $2 二级域名，例如 home.fxtaoo.com。
 # $3 cf authorization，参考下文 创建 cf authorization。
 # 1 个为可选参数：
 # $4 ttl 时间，单位分钟，同时为脚本定期执行时间，缺省为 3。
 # 日志默认位置，脚本文件同目录下 cloudflare-ddns.log 文件
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/cloudflare-ddns.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/cloudflare-ddns.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/other/cloudflare-ddns.sh)"
 
 cf_domain_nam=$1
 cf_ddns_domain_name=$2

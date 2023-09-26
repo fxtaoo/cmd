@@ -3,7 +3,7 @@
 # $1 git clone 路径
 # https://help.dropbox.com/zh-cn/sync/ignored-files
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/macos/git-dropbox-ignored-mac.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/macos/git-dropbox-ignored-mac.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/macos/git-dropbox-ignored-mac.sh)"
 
 set -eu
 

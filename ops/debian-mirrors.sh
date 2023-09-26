@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # debian apt 源
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/ops/debian-mirrors.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/ops/debian-mirrors.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/ops/debian-mirrors.sh)"
 
 set -eu
 

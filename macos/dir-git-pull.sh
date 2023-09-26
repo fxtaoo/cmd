@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 含有 .git 文件夹执行 git pull
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/macos/dir-git-pull.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/macos/dir-git-pull.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/macos/dir-git-pull.sh)"
 
 set -eu
 

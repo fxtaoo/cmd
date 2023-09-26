@@ -4,7 +4,7 @@
 # 换行分隔多个进程
 # $1 为检查间隔时间，单位秒，缺省为 3。
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/other/process-daemon.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/other/process-daemon.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/other/process-daemon.sh)"
 
 path=$(dirname $0)
 sleep_time=$1

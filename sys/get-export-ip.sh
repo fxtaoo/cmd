@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 出口 IP
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/sys/get-export-ip.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/sys/get-export-ip.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/sys/get-export-ip.sh)"
 
 function get_local_ip(){
     export_ip=""

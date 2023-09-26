@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 桌面创建当前目录快捷方式
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/macos/ln-dir-desktop.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/macos/ln-dir-desktop.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/macos/ln-dir-desktop.sh)"
 
 set -eu
 

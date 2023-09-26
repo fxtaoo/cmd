@@ -38,7 +38,7 @@ cat << EOF > $new_file_path
 #!/usr/bin/env bash
 # $intro
 # bash -c "\$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/${sort}/${file_name}.sh)"
-# bash -c "\$(curl -fsSL https://proxy.fxtaoo.dev/cmd/${sort}/${file_name}.sh)"
+# bash -c "\$(curl -fsSL https://proxy.fxtaoo.com/cmd/${sort}/${file_name}.sh)"
 
 set -eux
 

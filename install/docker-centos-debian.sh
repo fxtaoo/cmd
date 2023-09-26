@@ -2,7 +2,7 @@
 # centos debian 安装 docker
 # 国内 腾讯源 七牛 Docker Hub 镜像
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/docker-centos-debian.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/docker-centos-debian.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/install/docker-centos-debian.sh)"
 
 set -eu
 
@@ -41,7 +41,7 @@ mirrors="download.docker.com"
 docker_daemon="https://raw.githubusercontent.com/fxtaoo/cmd/master/file/docker-daemon.json"
 if ! ping -c 1 google.com &> /dev/null ;then
   mirrors="mirrors.cloud.tencent.com/docker-ce"
-  docker_daemon="https://proxy.fxtaoo.dev/cmd/file/docker-daemon-cn.json"
+  docker_daemon="https://proxy.fxtaoo.com/cmd/file/docker-daemon-cn.json"
 fi
 
 # 版本选择

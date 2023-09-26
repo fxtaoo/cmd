@@ -2,7 +2,7 @@
 # linux 安装 watchexec gun 版本
 # https://github.com/watchexec/watchexec/tree/main
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/watchexec.sh)"
-# bash -c "$(curl -fsSL https://proxy.fxtaoo.dev/cmd/install/watchexec.sh)"
+# bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/install/watchexec.sh)"
 
 local_version=$(watchexec --version | grep release | awk '{print $2}')
 latest_version=$(curl --silent "https://api.github.com/repos/watchexec/watchexec/releases/latest" | jq -r .tag_name | sed 's/^.//')
