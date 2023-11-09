@@ -60,11 +60,3 @@ proxy.fxtaoo.com 使用 Cloudflare CDN 代理 raw.githubusercontent.com<details>
 | [log.sh](https://github.com/fxtaoo/cmd/blob/master/other/log.sh) | [ 日志相关](https://proxy.fxtaoo.com/cmd/other/log.sh) |
 | [path-add-path.sh](https://github.com/fxtaoo/cmd/blob/master/other/path-add-path.sh) | [ 添加 PATH](https://proxy.fxtaoo.com/cmd/other/path-add-path.sh) |
 | [process-daemon.sh](https://github.com/fxtaoo/cmd/blob/master/other/process-daemon.sh) | [ 进程守护](https://proxy.fxtaoo.com/cmd/other/process-daemon.sh) |
-</details>
-<details> <summary>file</summary>
-
-| 文件名 | 介绍 |
-| :- | :- |
-| [docker-daemon-cn.json](https://github.com/fxtaoo/cmd/blob/master/file/docker-daemon-cn.json) | [    "exec-opts": [](https://proxy.fxtaoo.com/cmd/file/docker-daemon-cn.json) |
-| [docker-daemon.json](https://github.com/fxtaoo/cmd/blob/master/file/docker-daemon.json) | [    "exec-opts": [](https://proxy.fxtaoo.com/cmd/file/docker-daemon.json) |
-| [sysctl.conf](https://github.com/fxtaoo/cmd/blob/master/file/sysctl.conf) | [net.ipv4.tcp_fastopen = 3](https://proxy.fxtaoo.com/cmd/file/sysctl.conf) |

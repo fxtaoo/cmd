@@ -5,7 +5,7 @@ cloudflare_cdn="https://proxy.fxtaoo.com/cmd/"
 github="https://github.com/fxtaoo/cmd/blob/master/"
 
 # 地址、注释
-find install/* ops/* sys/* macos/* other/* file/* -print0 | xargs -0 -I% awk 'FNR==1 {print FILENAME} NR==2' % | sed 's/#//g' > /tmp/README.data
+find install/* ops/* sys/* macos/* other/* -print0 | xargs -0 -I% awk 'FNR==1 {print FILENAME} NR==2' % | sed 's/#//g' > /tmp/README.data
 
 # 生成
 data="# cmd
