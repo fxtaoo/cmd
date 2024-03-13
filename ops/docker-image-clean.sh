@@ -9,19 +9,17 @@ set -eu
 # 保留最近版本数
 keep_num=$1
 if (( keep_num < 1 ));then
-    echo "\$1 必须 >= 1！"
+    echo "\$1 必须 >= 3！"
 fi
 
-images=$(docker images | awk '{print $1}' | sort | uniq -d)
+docker_images=$(docker images)
+images=$(echo "$docker_images" | awk '{print $1}' | sort | uniq -d)
 
 for e in $images; do
-    e_num=$(docker images | grep -c $e)
+    e_num=$(echo "$docker_images" | grep -c "$e")
     del_num=$(( e_num - keep_num ))
     if (( del_num > 1 )); then
-        del_id=$(docker images | grep $e | tail -n $del_num | awk '{print $3}' | xargs)
+        del_id=$(echo "$docker_images" | grep "$e" | tail -n "$del_num" | awk '{print $3}' | xargs)
         docker rmi $del_id
     fi
 done
-
-
-

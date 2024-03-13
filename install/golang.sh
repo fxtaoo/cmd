@@ -1,24 +1,19 @@
 #!/usr/bin/env bash
 # golang 安装最新版本
-# $1 指定 go 版本号（eg:go1.18.4），缺省最新
-# $2 指定架构，缺省尝试自动获取
+# $1 指定 go 版本号，缺省最新（国内必须指定版本号）
 # bash -c "$(curl -fsSL https://raw.githubusercontent.com/fxtaoo/cmd/master/install/golang.sh)"
 # bash -c "$(curl -fsSL https://proxy.fxtaoo.com/cmd/install/golang.sh)"
 
-set -eu
+set -ex
 
 go_version=$1
-type=$2
+type=""
 
 download_site='https://go.dev/dl'
 golang_version_api='https://go.dev'
-if ! ping -c 1 google.com;then
-    download_site='https://mirrors.ustc.edu.cn/golang'
-    golang_version_api='https://proxy.fxtaoo.com/go'
-fi
 
 if [[ -z $go_version ]];then
- go_version=$(curl -fsSL ${golang_version_api}/VERSION?m=text)
+  go_version=$(curl -fsSL ${golang_version_api}/VERSION?m=text | head -n1)
 fi
 
 # golang 已安装，比较版本号
@@ -55,13 +50,7 @@ fi
 go_file_name="${go_version}.${type}.tar.gz"
 tmpfile=$(mktemp)
 
+
 wget ${download_site}/${go_file_name} -O $tmpfile && sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf $tmpfile
 
 rm -f $tmpfile
-
-# 七牛代理
-if [[ $golang_version_api == 'https://proxy.fxtaoo.com/go' ]] ; then
-    PATH="$PATH:/usr/local/go/bin"
-    go env -w GO111MODULE=on
-    go env -w GOPROXY=https://goproxy.cn,direct
-fi
