@@ -21,6 +21,7 @@ proxy.fxtaoo.com 使用 Cloudflare CDN 代理 raw.githubusercontent.com<details>
 | [centos-ip-zero-link-down.sh](https://github.com/fxtaoo/cmd/blob/master/ops/centos-ip-zero-link-down.sh) | [ centos ip 0 连接数，关闭网卡、注释 ifcfg-eth ！仅测试 centos 5、7](https://proxy.fxtaoo.com/cmd/ops/centos-ip-zero-link-down.sh) |
 | [debian-mirrors.sh](https://github.com/fxtaoo/cmd/blob/master/ops/debian-mirrors.sh) | [ debian apt 源](https://proxy.fxtaoo.com/cmd/ops/debian-mirrors.sh) |
 | [debian-rc-local.sh](https://github.com/fxtaoo/cmd/blob/master/ops/debian-rc-local.sh) | [ debian 使用 /etc/rc.local](https://proxy.fxtaoo.com/cmd/ops/debian-rc-local.sh) |
+| [delete-log.sh](https://github.com/fxtaoo/cmd/blob/master/ops/delete-log.sh) | [ 删除日志](https://proxy.fxtaoo.com/cmd/ops/delete-log.sh) |
 | [docker-cpu-use-max-calc.sh](https://github.com/fxtaoo/cmd/blob/master/ops/docker-cpu-use-max-calc.sh) | [ 容器 cpu 指定使用比例](https://proxy.fxtaoo.com/cmd/ops/docker-cpu-use-max-calc.sh) |
 | [docker-image-clean.sh](https://github.com/fxtaoo/cmd/blob/master/ops/docker-image-clean.sh) | [ 删除镜像，设置保留几个版本](https://proxy.fxtaoo.com/cmd/ops/docker-image-clean.sh) |
 | [docker-rm-grep-str.sh](https://github.com/fxtaoo/cmd/blob/master/ops/docker-rm-grep-str.sh) | [ 筛选删除容器](https://proxy.fxtaoo.com/cmd/ops/docker-rm-grep-str.sh) |
